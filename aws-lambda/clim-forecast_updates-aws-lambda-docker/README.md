@@ -5,7 +5,7 @@ The diagram below summarizes the processes associated with data access and web s
 Due to the considerable size of the dependencies involved, both functions have been packaged as Docker images. The deployment was carried out using AWS CDK and CLI, and you can access the files and folder structure in the "clim-forecast_updates-aws-lambda-docker" folder within the repository.
 
 <p align="center">
- <img width="655" alt="aws" src="img/grasscast_data_processing.png">
+ <img width="655" alt="aws" src="../../img/grasscast_data_processing.png">
 </p>
 
 ## Climate Lambda Function
