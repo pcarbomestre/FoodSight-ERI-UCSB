@@ -1,0 +1,86 @@
+[
+    {
+        "slug_id": "1650",
+        "market_location_name": "Topeka Hay Auction ",
+        "market_location_state": "IN",
+        "market_location_city": "Topeka"
+    },
+    {
+        "slug_id": "1716",
+        "market_location_name": "Wolgemuth Hay Auction - New Holland",
+        "market_location_state": "PA",
+        "market_location_city": "New Holland"
+    },
+    {
+        "slug_id": "1725",
+        "market_location_name": "Wolgemuth Hay Auction - Leola",
+        "market_location_state": "PA",
+        "market_location_city": "Leola"
+    },
+    {
+        "slug_id": "1726",
+        "market_location_name": "Kirkwood Hay Auction",
+        "market_location_state": "PA",
+        "market_location_city": "Kirkwood"
+    },
+    {
+        "slug_id": "2243",
+        "market_location_name": "Rock Valley Hay Auction (1)",
+        "market_location_state": "IA",
+        "market_location_city": "Rock Valley"
+    },
+    {
+        "slug_id": "2244",
+        "market_location_name": "Rock Valley Hay Auction (2)",
+        "market_location_state": "IA",
+        "market_location_city": "Rock Valley"
+    },
+    {
+        "slug_id": "2245",
+        "market_location_name": "Dakota Hay Auction",
+        "market_location_state": "SD",
+        "market_location_city": "Corsica"
+    },
+    {
+        "slug_id": "2246",
+        "market_location_name": "Pipestone Hay & Straw Auction",
+        "market_location_state": "MN",
+        "market_location_city": "Pipestone"
+    },
+    {
+        "slug_id": "3364",
+        "market_location_name": "Shipshewana Hay Auction",
+        "market_location_state": "IN",
+        "market_location_city": null
+    },
+    {
+        "slug_id": "3489",
+        "market_location_name": "Rushville Market",
+        "market_location_state": "VA",
+        "market_location_city": "Harrisonburg"
+    },
+    {
+        "slug_id": "3627",
+        "market_location_name": "Brush",
+        "market_location_state": "CO",
+        "market_location_city": "Brush"
+    },
+    {
+        "slug_id": "3652",
+        "market_location_name": "Arthur Sale Barn",
+        "market_location_state": "IL",
+        "market_location_city": "Arthur"
+    },
+    {
+        "slug_id": "3660",
+        "market_location_name": "Madison County Ag Auction",
+        "market_location_state": "IL",
+        "market_location_city": "Bethalto"
+    },
+    {
+        "slug_id": "3679",
+        "market_location_name": "Centennial",
+        "market_location_state": "CO",
+        "market_location_city": "Fort Collins"
+    }
+]

@@ -1,0 +1,16 @@
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+
+# Credentials
+.aws
+.mapbox_token
+.mmn_api_token
+
+# Lambda-Docker
+node_modules/
+
+# Prevent CSV files from being pushed
+*.csv

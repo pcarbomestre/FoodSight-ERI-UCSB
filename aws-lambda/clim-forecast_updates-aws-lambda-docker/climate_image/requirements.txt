@@ -1,0 +1,9 @@
+boto3
+pandas
+geopandas
+requests
+pyjanitor
+Shapely
+Fiona
+pyproj
+rtree

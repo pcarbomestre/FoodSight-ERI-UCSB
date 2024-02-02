@@ -1,0 +1,3365 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css2?family=Cabin')
+
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+- Plotly.js
+- Grid
+- Base Styles
+- Typography
+- Links
+- Buttons
+- Forms
+- Lists
+- Code
+- Tables
+- Spacing
+- Utilities
+- Clearing
+- Media Queries
+*/
+
+/* PLotly.js
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* plotly.js's modebar's z-index is 1001 by default
+ * https://github.com/plotly/plotly.js/blob/7e4d8ab164258f6bd48be56589dacd9bdd7fded2/src/css/_modebar.scss#L5
+ * In case a dropdown is above the graph, the dropdown's options
+ * will be rendered below the modebar
+ * Increase the select option's z-index
+ */
+
+/* This was actually not quite right -
+   dropdowns were overlapping each other (edited October 26)
+
+.Select {
+    z-index: 1002;
+}*/
+
+/* Grid
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.column,
+.columns {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+}
+
+/* For devices larger than 400px */
+@media (min-width: 400px) and (max-width: 549px) {
+    .container {
+        width: 85%;
+        padding: 0;
+    }
+}
+
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+    .container {
+        width: 80%;
+    }
+
+    .column,
+    .columns {
+        margin-left: 4%;
+    }
+
+    .column:first-child,
+    .columns:first-child {
+        margin-left: 0;
+    }
+
+    .one.column,
+    .one.columns {
+        width: 4.66666666667%;
+    }
+
+    .two.columns {
+        width: 13.3333333333%;
+    }
+
+    .three.columns {
+        width: 22%;
+    }
+
+    .four.columns {
+        width: 30.6666666667%;
+    }
+
+    .five.columns {
+        width: 39.3333333333%;
+    }
+
+    .six.columns {
+        width: 48%;
+    }
+
+    .seven.columns {
+        width: 56.6666666667%;
+    }
+
+    .eight.columns {
+        width: 65.3333333333%;
+    }
+
+    .nine.columns {
+        width: 74.0%;
+    }
+
+    .ten.columns {
+        width: 82.6666666667%;
+    }
+
+    .eleven.columns {
+        width: 91.3333333333%;
+    }
+
+    .twelve.columns {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .one-third.column {
+        width: 30.6666666667%;
+    }
+
+    .two-thirds.column {
+        width: 65.3333333333%;
+    }
+
+    .one-half.column {
+        width: 48%;
+    }
+
+    /* Offsets */
+    .offset-by-one.column,
+    .offset-by-one.columns {
+        margin-left: 8.66666666667%;
+    }
+
+    .offset-by-two.column,
+    .offset-by-two.columns {
+        margin-left: 17.3333333333%;
+    }
+
+    .offset-by-three.column,
+    .offset-by-three.columns {
+        margin-left: 26%;
+    }
+
+    .offset-by-four.column,
+    .offset-by-four.columns {
+        margin-left: 34.6666666667%;
+    }
+
+    .offset-by-five.column,
+    .offset-by-five.columns {
+        margin-left: 43.3333333333%;
+    }
+
+    .offset-by-six.column,
+    .offset-by-six.columns {
+        margin-left: 52%;
+    }
+
+    .offset-by-seven.column,
+    .offset-by-seven.columns {
+        margin-left: 60.6666666667%;
+    }
+
+    .offset-by-eight.column,
+    .offset-by-eight.columns {
+        margin-left: 69.3333333333%;
+    }
+
+    .offset-by-nine.column,
+    .offset-by-nine.columns {
+        margin-left: 78.0%;
+    }
+
+    .offset-by-ten.column,
+    .offset-by-ten.columns {
+        margin-left: 86.6666666667%;
+    }
+
+    .offset-by-eleven.column,
+    .offset-by-eleven.columns {
+        margin-left: 95.3333333333%;
+    }
+
+    .offset-by-one-third.column,
+    .offset-by-one-third.columns {
+        margin-left: 34.6666666667%;
+    }
+
+    .offset-by-two-thirds.column,
+    .offset-by-two-thirds.columns {
+        margin-left: 69.3333333333%;
+    }
+
+    .offset-by-one-half.column,
+    .offset-by-one-half.columns {
+        margin-left: 52%;
+    }
+
+}
+
+
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* NOTE
+html is set to 62.5% so that all the REM measurements throughout Skeleton
+are based on 10px sizing. So basically 12.0px = 15px :) */
+html {
+    font-size: 50%;
+    background-color: #ffffff;
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0;
+}
+
+body {
+    font-size: 12.0px; /* currently ems cause chrome bug misinterpreting rems on body element */
+    line-height: 1.6;
+    font-weight: 400;
+    font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #28323c;
+    margin: 0;
+}
+
+#root {
+    margin: 0;
+    overflow-x: auto;
+}
+
+#root, #root * {
+    box-sizing: border-box;
+}
+
+
+@media (max-width: 550px) {
+    #root {
+        padding: 16.0px;
+    }
+}
+
+@media (min-width: 551px) {
+    #root {
+        padding: 40.0px;
+        padding-top: 16.0px;
+    }
+}
+
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 36.0px;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+    margin-bottom: 16.0px;
+}
+
+h2 {
+    font-size: 28.8px;
+    line-height: 1.25;
+    letter-spacing: -0.8px;
+    margin-bottom: 14.4px;
+    margin-top: 14.4px;
+}
+
+h3 {
+    font-size: 24.0px;
+    line-height: 1.3;
+    font-weight: 900;
+    letter-spacing: -0.8px;
+    margin-bottom: 12.0px;
+    margin-top: 12.0px;
+}
+
+h4 {
+    font-family: 'Cabin', sans-serif;
+    font-size: 32.0px;
+    line-height: 1.35;
+    letter-spacing: -0.64px;
+    margin-bottom: 9.6px;
+    margin-top: 9.6px;
+}
+
+h5 {
+    font-size: 17.6px;
+    line-height: 1.5;
+    letter-spacing: -0.4px;
+    margin-bottom: 4.8px;
+    margin-top: 4.8px;
+}
+
+h6 {
+    font-size: 12.0px;
+    line-height: 1.6;
+    letter-spacing: 0;
+    margin-bottom: 6.0px;
+    margin-top: 6.0px;
+}
+
+p {
+    margin-top: 0;
+}
+
+#heatmap-title {
+    font-family: "Playfair Display", sans-serif;
+    font-size: 16.0px;
+}
+
+
+
+#description {
+    font-size: 12.0px;
+    border-left: #1f345e solid 8.0px;
+    padding-left: 8.0px;
+    max-width: 1000.0px;
+    margin: 16.0px 0.0px 24.0px 0.0px;
+    width: 100% !important;
+    flex-grow: 1
+}
+
+@media (max-width: 1150px) {
+    #description {
+        font-size: 11px !important;
+    }
+   
+
+   
+}
+
+
+@media (max-width: 950px) {
+    #description {
+        font-size: 10px !important;
+    }
+   
+
+   
+}
+
+@media (max-width: 850px) {
+    #description {
+        display: none;
+    }
+
+   
+    #logo {
+        margin-top: 4.0px !important;
+        margin-bottom: 8.0px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    #page-links {
+        margin-right: 16.0px !important;
+    }
+
+   
+}
+
+@media (max-width: 750px) {
+  
+   
+    #location-container {
+        margin-bottom: 12.0px;
+        margin-left: 0.0px !important;
+        width: 200.0px; /* Reduce the width */
+    }
+
+
+    #autocomplete-input {
+        font-size: 12px !important;  /* Reduce the font size */
+        margin-left: 8.0px !important;
+        width: 128.0px !important; /* Reduce the input width */
+    }
+    #location-container{
+        width: 184.0px !important;
+    }
+    #title-dropdown-container, #hay-title-dropdown-container {
+        font-size: 15px !important;
+    }
+
+    
+    #title-table-econ-container {
+        font-size: 15px !important;
+    }
+
+    #table-econ {
+        margin-left: 24.0px !important;
+        margin-right: 24.0px !important;
+    }
+
+
+    .cell-text{
+        font-size: 13px !important;
+    }
+
+    
+    #heatmap-header-container {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        font-size: 12px !important;
+        padding-top: 7px !important;
+        padding-left: 20px !important;
+        padding-bottom: 4px !important;
+    }
+
+    #checkboxes-map {
+        display: flex !important;
+        flex-wrap: wrap !important; /* Allows checkboxes to stay inline but wrap if needed */
+    }
+
+    #checkboxes-map label {
+        display: inline-block !important; /* Keeps individual labels with checkboxes inline */
+    }
+
+    #choropleth-map{
+        margin:4.0px!important;
+        margin-top: -28.0px !important;
+    }
+
+  
+
+}
+
+@media (max-width: 630px) {
+  
+    #controls-container {
+        flex-direction: column; /* Make children of controls-container stack vertically */
+        align-items: stretch; /* Make sure they stretch to full width */
+        margin-bottom: 16.0px;
+        
+     
+    }
+
+   
+    #page-links, #location-container {
+        align-self: flex-start; /* This will align these elements to the start (left) of the container */
+    }
+
+    #page-links{
+        margin: 0 !important;
+    }
+
+    #info-container {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start; /* Spaces items evenly apart */
+        overflow: visible;
+    }
+    
+    #firstText, #secondText, #thirdText, #fourthText {
+        flex: 0 0 calc(50% - 8.0px); /* Each take up half of the container's width minus half of the gap */
+        margin-bottom: 0.0px; /* Gap between rows */
+    }
+  
+    
+    #firstText, #secondText{
+        margin-bottom: 8.0px; /* Gap between rows */
+        margin-top: 0;
+
+    }
+
+    #app-container{
+        margin-top: 0 !important;
+    }
+    
+    #secondText, #fourthText {
+        margin-left: 8.0px !important; /* Gap between items on the same row */
+        margin-right: 0.0px !important; /* Gap between items on the same row */
+
+    }
+
+    #info-container2 {
+        display: flex ;
+        flex-direction: column !important;
+    }
+    
+
+    #compass_loc, #econ_summary, #price-weight-graph-container, #forecast_summary {
+        flex: 1; /* Makes both containers take up an equal amount of space side by side */
+        box-sizing: border-box; /* So padding doesn't affect the overall width */
+        padding: 10px;
+        width: 100%; /* Makes both containers take up the full width of the info-container */
+    }
+
+    #compass_loc{
+       margin:0 !important; 
+    }
+
+
+
+
+    #econ_summary, #forecast_summary {
+        margin-top: 16.0px !important;
+    }
+
+    #cattle-graph-container, #hay-graph-container{
+        padding-left:0 !important;
+        padding-top: 8.0px !important;
+
+    }
+    #hay-graph-container{
+        height: 390px !important;
+    }
+
+    #box-trend-graph, #indicator-hay-graph{
+        margin:0 !important;
+        padding-top:8.0px !important;
+        padding-left:8.0px !important;
+        padding-right:24.0px !important;
+        width: 100% !important;
+    }
+
+    
+    .econ-dropdown-container {
+        flex-direction: column !important;
+        margin: 8.0px !important;
+    }
+
+    #grouped-dropdowns, #grouped-dropdowns-hay {
+        display: flex;
+        flex-direction: row;
+        width:100%;
+        margin:0 !important;
+        margin-top: 8.0px !important;
+
+    }
+
+    #title-dropdown-container, #hay-title-dropdown-container{
+        width: 20%;
+        color:white;
+        margin-left:8.0px !important;
+    }
+
+    
+    
+
+    /* #output_text{
+        display:none;
+    } */
+
+    #title-dropdown-container, #hay-title-dropdown-container {
+        font-size: 13px !important;
+    }
+
+    
+ 
+    #title-table-econ-container {
+        font-size: 14px !important;
+    }
+
+    #table-econ{
+        margin-left: 8.0px !important;
+        margin-right: 8.0px !important;
+    }
+
+    #table-econ text.cell-text{
+
+        font-size: 11px !important;
+    }
+
+    #table-econ tspan.line{
+
+        font-size: 9px !important;
+    }
+
+
+    .cell-text{
+        font-size: 12px !important;
+    }
+
+    #price-weight-graph-container {
+       
+        margin-right: 0 !important;  /* or whatever specific space you want */
+        
+        
+    }
+
+}
+
+
+
+
+#controls-container{
+    display: flex; 
+    justify-content: space-between;
+}
+
+
+
+#slider-text {
+    margin-bottom: 16.0px !important;
+    font-size: 16.0px;
+}
+
+.rc-slider-mark-text {
+    color: #282b3f !important;
+}
+
+.rc-slider-tooltip-inner {
+    margin-top: -2px;
+}
+
+
+
+#chart-selector {
+    margin-bottom: 16.0px !important;
+    margin-top: 16.0px;
+    font-size: 16.0px;
+}
+
+#output-selected-value {
+    margin-bottom: 16.0px !important;
+    margin-left: 16.0px;
+    font-size: 16.0px;
+}
+
+
+@media only screen and (max-width: 550px) {
+    .rc-slider-mark-text {
+        font-size: 50%;
+    }
+
+}
+
+
+/* Blockquotes
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+blockquote {
+    border-left: 4px lightgrey solid;
+    padding-left: 8.0px;
+    margin-top: 16.0px;
+    margin-bottom: 16.0px;
+    margin-left: 0;
+}
+
+
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+a {
+    color: #314145;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #333652;
+}
+
+
+/* Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+    display: inline-block;
+    height: 38px;
+    padding: 0 30px;
+    color: #555;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+    color: #333;
+    border-color: #888;
+    outline: 0;
+}
+
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+    color: #FFF;
+    background-color: #33C3F0;
+    border-color: #33C3F0;
+}
+
+.button.button-primary:hover,
+button.button-primary:hover,
+input[type="submit"].button-primary:hover,
+input[type="reset"].button-primary:hover,
+input[type="button"].button-primary:hover,
+.button.button-primary:focus,
+button.button-primary:focus,
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,
+input[type="button"].button-primary:focus {
+    color: #FFF;
+    background-color: #1EAEDB;
+    border-color: #1EAEDB;
+}
+
+
+/* Forms
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+    height: 38px;
+    padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+    background-color: #fff;
+    border: 1px solid #D1D1D1;
+    border-radius: 4px;
+    box-shadow: none;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: inherit; /*https://stackoverflow.com/questions/6080413/why-doesnt-input-inherit-the-font-from-body*/
+}
+
+/* Removes awkward default styles on some inputs for iOS */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+textarea {
+    min-height: 65px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+    border: 1px solid #33C3F0;
+    outline: 0;
+}
+
+label,
+legend {
+    display: block;
+    margin-bottom: 0;
+}
+
+fieldset {
+    padding: 0;
+    border-width: 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    display: inline;
+}
+
+label > .label-body {
+    display: inline-block;
+    margin-left: 4.0px;
+    font-weight: normal;
+}
+
+
+/* Lists
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ul {
+    list-style: circle inside;
+}
+
+ol {
+    list-style: decimal inside;
+}
+
+ol, ul {
+    padding-left: 0;
+    margin-top: 0;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+    margin: 12.0px 0 12.0px 24.0px;
+    font-size: 90%;
+}
+
+li {
+    margin-bottom: 8.0px;
+}
+
+
+/* Tables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+table {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #E1E1E1;
+}
+
+th:first-child,
+td:first-child {
+    padding-left: 0;
+}
+
+th:last-child,
+td:last-child {
+    padding-right: 0;
+}
+
+
+/* Spacing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+button,
+.button {
+    margin-bottom: 0;
+}
+
+input,
+textarea,
+select,
+fieldset {
+    margin-bottom: 0;
+}
+
+pre,
+dl,
+figure,
+table,
+form {
+    margin-bottom: 0;
+}
+
+p,
+ul,
+ol {
+    margin-bottom: 6.0px;
+}
+
+/* Utilities
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.u-full-width {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.u-max-full-width {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.u-pull-right {
+    float: right;
+}
+
+.u-pull-left {
+    float: left;
+}
+
+
+/* Misc
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+hr {
+    margin-top: 0;
+    border-width: 0;
+    border-top: 1px solid #000000;
+}
+
+
+/* Clearing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Self Clearing Goodness */
+.container:after,
+.row:after,
+.u-cf {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Location
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#header-title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%; 
+}
+
+#header-title a {
+    margin-right: 10px;
+}
+
+#header-title .description-container {
+    flex:1;
+}
+
+#description-logo-container {
+    display: flex;  /* Make it a flex container */
+    justify-content: space-between; /* Children will be on different sides */
+    align-items: center; /* This will vertically center align the children */
+}
+
+#logo {
+    width: 130px;
+    height: auto;
+    margin-right: 40.0px;
+    margin-left: 16.0px;
+    margin-top: 16.0px;
+
+}
+
+#logo-link {
+    /* background-image: url('/assets/logo.png'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 130px;
+    height: auto;
+    margin-right: 40.0px;
+}
+
+
+#location-container {
+
+    width: 100% !important;
+}
+
+
+
+
+
+
+
+#location-elements {
+    display: flex;
+}
+
+#update_btn {
+    width: 40px;  /* Adjust as needed */
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+#update_btn .fa {
+    font-size: 30px; /* Adjust as needed */
+}
+
+#resources-button, #resources-button-hidden {
+    width: 40px;  /* Adjust as needed */
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+#resources-button .fa, #resources-button-hidden .fa {
+    font-size: 20px; /* Adjust as needed */
+}
+
+#autocomplete-input {
+    border: none;
+    border-bottom: 1px solid #000;  /* Add a border line at the bottom */
+    background-color: #ffffff;  /* Same as the app's background color */
+    font-size: 18px;  /* Bigger font size */
+    box-shadow: none; /* Remove default box shadow */
+    color: #000;  /* Set color of the input text */
+    font-size: 16px;  /* Set font size of the input text */
+    margin-left: 24.0px;
+    width: 160.0px;
+}
+
+
+.modal-content {
+    border-radius: 10px;
+}
+
+#modal-close-button {
+    border-radius: 5px;
+}
+
+
+/* Slider
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+#slider-container {
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px lightgrey;
+    background-color: #dbe5f3;
+    padding: 16.0px 48.0px 32.0px 32.0px;
+    height: 64.0px;
+}
+
+#slct_year {
+    margin-right:41.6px;
+    margin-left:68.8px;
+    margin-top: -16.0px;
+    margin-bottom: 0.0px;  /* adjust as needed */
+
+}
+
+
+
+
+.rc-slider-dot-active, .rc-slider-handle {
+    border-color: #1d2866 !important;
+}
+
+.rc-slider-track {
+    background-color: #263c6d !important
+}
+
+.rc-slider-rail {
+    background-color: #3d4d5d !important
+}
+
+/* Heatmap
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#heatmap-container {
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px lightgrey;
+    margin: 0;
+    background-color: #dbe5f3;
+    width: 100%;  /* take up full width */
+    height: 100%;  /* take up full height */
+    position: relative;  /* establish a new positioning context */
+    overflow: hidden;  /* hide any child content that overflows the container */
+}
+
+
+
+
+
+
+
+#heatmap-header-container {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 12.0px 0.0px 0.0px 40.0px;
+    font-size: 13px;
+    margin-bottom: -24.0px;
+}
+
+#checkboxes-map {
+    position: relative !important;
+    z-index: 1 !important; 
+    display: inline-block !important;
+}
+
+#output_container, #checkboxes-map {
+    margin: 0;
+    margin-right: 20px;
+}
+
+#checkboxes-map label {
+    margin-right: 10px;
+    display: inline-block !important;
+}
+
+
+label input[type="checkbox"] {
+    margin-right: 5px;
+
+}
+
+
+
+#choropleth-map {
+    margin-left: 16.0px;
+    margin-right: 16.0px;
+    margin-bottom: 8.0px;
+    /* flex-grow: 1; */
+    height: 360.0px;  /* take up full height */
+    position: relative;  /* position relative to heatmap-container */
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 550px) {
+    #choropleth-map .annotation-text{
+        font-size: 9.6px !important;
+    }
+}
+
+/* Spatial summary
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.mini_container_spatial {
+    border-radius: 10px;
+    background-color: #dbe5f3;
+    position: relative;
+    box-shadow: 2px 2px 2px lightgrey;
+    box-sizing: border-box;
+    padding-bottom: 8.0px;
+
+    display: flex;
+    justify-content: center; /* Horizontally centers content */
+    align-items: center; /* Vertically centers content */
+    flex-direction: column; 
+}
+
+#info-container2{
+    display:flex;
+    margin: 0;
+    margin-bottom: 16.0px;
+
+    width: 100%;
+    position: static;
+    display: flex; /* Flexbox container */
+    justify-content: space-between;
+}
+
+
+
+
+
+
+#compass_loc {
+    flex: 1;    
+    padding-top: 4.0px;
+    margin-top: 0;
+    margin-left: 0;
+    box-sizing: border-box;  
+    margin-right: 10px;  /* or whatever specific space you want */
+    width: auto; 
+    min-width: 0;
+    
+}
+
+#compass-summary-title {
+    width: 280.0px;
+    margin-top:8.0px;
+    margin-left: 25px;
+    text-align: left;
+}
+
+#distance-input-container {
+    margin-left: 0px;
+}
+
+.columns-container {
+    display: flex;
+
+}
+
+
+.all-elements-column {
+    flex: 4;  /* occupy 80% */
+    flex-direction: column;  /* arrange children in a column */
+    box-sizing: border-box;
+    width: 60%;
+}
+
+
+#graph-bar-container {
+    height: 140px;
+    width: 100.5px;
+}
+
+#violin-gradient-plot {
+    height: 140px;
+    margin-top: 5px;
+    margin-left: 10px;
+
+}
+
+
+#polar-graph{
+    flex: 1; /* Takes equal width. Adjust as needed */
+    height: 120px;
+    padding-left: 16.0px;
+    padding-top: 12.0px;
+    padding-bottom: 4.0px;
+
+    box-sizing: border-box;
+
+}
+
+
+#graph-bar {
+    /* transform: rotate(-90deg); */
+    /* transform-origin: center; */
+    flex: 1;  /* occupy 20% */
+    box-sizing: border-box;
+    width: 40%;
+    margin-right: -16.0px;
+
+}
+
+#miles-input{
+    width: 56.0px;
+    height: 24.0px;
+    padding-right:16.0px;
+    margin-left:8.0px;
+    padding-top:0.0px;
+    padding: 3px;
+}
+
+.inline-label-input {
+    display: inline-block;
+    padding-left: 8.0px;
+    padding-top: 4.0px;
+}
+
+
+
+
+ 
+ 
+
+/* Econ summary
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+.button-style {
+    background-color: transparent;
+    color: #dbe5f3;
+    height: 21px;
+    width: 21px;
+    line-height: 20px;
+    border-radius: 50%; /* It's common to use 50% for creating circles */
+    display: inline-block;
+    margin: 8.0px;             /* 4.0px margin to the left and right of each button */
+    text-align: center;
+    font-size: 8px;
+    border: 1px solid #dbe5f3;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    padding: 0; /* Ensure there's no padding extending the size */
+}
+
+.button-style:active {
+    background-color: #dbe5f3;
+    color: #282b3f;
+}
+
+.button-style:focus{
+    background-color: #dbe5f3;
+    color: #282b3f;
+}
+
+.button-style:hover{
+    background-color: #dbe5f3;
+    color: #282b3f;
+}
+
+
+.button-style2 {
+    background-color: transparent;
+    color: #282b3f;
+    height: 25px;
+    width: 25px;
+    line-height: 20px;
+    border-radius: 50%; /* It's common to use 50% for creating circles */
+    display: inline-block;
+    margin: 8.0px;             /* 4.0px margin to the left and right of each button */
+    text-align: center;
+    font-size: 8px;
+    border: 1px solid #282b3f;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    padding: 0; /* Ensure there's no padding extending the size */
+}
+
+.button-style2:active {
+    background-color: #282b3f;
+    color: #dbe5f3;
+}
+
+.button-style2:focus{
+    background-color: #282b3f;
+    color: #dbe5f3;
+}
+
+.button-style2:hover{
+    background-color: #282b3f;
+    color: #dbe5f3;
+}
+
+
+.button-style-market {
+    background-color: transparent;
+    color: #dbe5f3;
+    height: 30px;  
+    width: 120px;
+    border-radius: 10px;
+    margin: 1em;
+    text-align: center;
+    font-size: 12px;
+    border: 1px solid #dbe5f3;
+    float: right;
+    display: flex;  
+    justify-content: center; 
+    align-items: center;  
+    padding: 0 10px;  /* Add some horizontal padding */
+    box-sizing: border-box;  /* Include padding and border in the button's total width and height */
+    line-height: 30px;  /* Match the button height to vertically center the text */
+}
+
+.button-style-market:hover{
+    background-color: #dbe5f3;
+    color: #282b3f;
+}
+
+.button-container-forecast {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24.0px;
+    margin-bottom: 4px;
+}
+
+.button-container-hist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24.0px;
+    margin-bottom:16.0px;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 16.0px;
+    height: 56.0px;
+}
+
+#indicator-graph {
+    height:120.0px;
+    width: 100% !important; 
+    margin-left: 0.0px;
+    padding-top:5px;
+    padding-bottom:8.0px;
+    padding-left:24.0px;
+    padding-right:24.0px;
+    margin-top:-8.0px;
+    box-sizing: border-box;
+
+}
+
+#econ_summary {
+    flex: 1;
+    padding-top: 4.0px;
+    margin-top: 0;
+    margin-right: 0;
+    background-color: #282b3f;
+    vertical-align: middle;
+    box-sizing: border-box;
+    justify-content: initial !important; 
+    align-items: initial !important;
+    flex-grow: 1;
+    width: auto; 
+    min-width: 0;
+}
+
+#btn-market-info {
+    margin:0;
+    margin-left:16.0px;
+}
+
+#location-dropdown{
+    margin-left: 16.0px ;
+    margin-right: 16.0px ;
+
+}
+
+#location-dropdown .Select-control {
+    color: #282b3f ;
+    background-color: #282b3f ;
+    border: 0px solid transparent;
+
+
+}
+
+#location-dropdown .Select {
+    color: #dbe5f3  ;
+
+}
+
+#location-dropdown .Select input{
+    color: #dbe5f3  ;
+}
+
+
+#location-dropdown .Select-menu-outer {
+    background-color: #282b3f ;
+    border: 0px ;
+    z-index: 9999 ; /* This will ensure that the dropdown options always appear on top */
+    margin-left: 8.0px ;
+    margin-right: 8.0px ;
+}
+
+#location-dropdown .Select div {
+    background-color:#282b3f ;
+}
+
+#location-dropdown .Select-menu-outer div:hover {
+    background-color: rgba(255, 255, 255, 0.01);
+    cursor: pointer;
+}
+
+#location-dropdown .Select-value-label {
+    color: #dbe5f3  ;
+}
+
+#location-dropdown .Select--single > .Select-control .Select-value, .Select-placeholder {
+    border: 0px ;
+    border-radius: 0px ;
+}
+
+
+/* Left column
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media only screen and (max-width: 1250px) {
+    /*For mobile and smaller screens*/
+    #left-column {
+        margin-right: 1.5%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media (min-width: 1251px) {
+    /*For desktop*/
+    #left-column {
+        margin-right: 1.5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: center;
+        flex: 6 60%;
+    }
+}
+
+/* Right column
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+
+#right-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    flex: 6 60%;
+
+}
+
+
+
+.container {
+    display: flex;
+    width: 100%;
+    gap: 3%; /* This creates a gap between flex items */
+}
+
+/* Left column */
+.decision-left-column {
+    width: 30%; /* You can adjust this value as needed */
+    margin-right: 3%; /* Increased margin for more separation */
+}
+
+/* Right column */
+.decision-right-column {
+    flex: 1; /* This will make it take up the remaining space */
+    margin-left: 3%; /* Increased margin for more separation */
+}
+
+/* Summary
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#info-container {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 16.0px;
+    position: static;
+}
+
+#firstText, #secondText, #thirdText, #fourthText {
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 1%; /* Optional, adds a bit of space between them */
+    vertical-align: center; /* To ensure they align at the top */
+}
+
+#firstText {
+    width:28%;
+}
+
+#secondText {
+    width:18%;
+}
+
+#thirdText {
+    width:28%;
+}
+
+#fourthText {
+    width:23%;
+    margin-right: 0;
+}
+
+
+
+
+
+#summary-container {
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px lightgrey;
+    background-color: #dbe5f3;
+    padding: 16.0px 32.0px 0.0px 32.0px;
+    height: 64.0px;
+}
+
+.rc-slider-dot-active, .rc-slider-handle, .rc-slider-dot {
+    border-color: #1d2866 !important;
+}
+
+
+
+.rc-slider-track {
+    background-color: #263c6d !important
+}
+
+.rc-slider-rail {
+    background-color: #3d4d5d !important
+}
+
+.mini_container {
+    border-radius: 10px;
+    background-color: #dbe5f3;
+    margin: 0px 10px;
+    padding: 15px;
+    position: relative;
+    box-shadow: 2px 2px 2px lightgrey;
+}
+
+.container-display {
+    display: flex;
+}
+
+#text1, #text2, #text3, #text4 {
+    padding-top: 4.0px;
+    padding-bottom: 4.0px;
+    margin-top: 0
+}
+
+#text1 {
+    margin-left: 0;
+}
+
+#text4 {
+    margin-right: 0;
+}
+
+/* Graph
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#graph-container {
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px lightgrey;
+    margin: 20.0px 0 0 0;
+    background-color: #dbe5f3;
+    padding-left: 16.0px;
+    margin-bottom: 16.0px;
+}
+
+#output_text {
+    padding: 16.0px 55% 0.0px 16.0px;
+}
+
+#output_text2 {
+    padding: 16.0px 55% 0.0px 16.0px;
+}
+
+#tabs {
+    position: absolute;
+    display:flex;
+    flex-direction: row !important;
+    top: 8.0px;
+    right: 8.0px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px lightgrey;
+    height:40.0px ;
+    width: 50%;
+    border-bottom: 1px solid #d6d6d6;
+    background-color: #FFFFFF; /* Set a background color */
+    font-weight: bold;
+    margin-left: auto; 
+    overflow: hidden; /* Add this line */
+}
+
+.jsx-3468109796{
+    padding-top: 8.0px !important;
+}
+
+
+
+
+#plot-and-slider-container, #plot-and-switch-container {
+    padding-top: 16.0px;
+}
+
+
+#line-plot {
+    height: 308.0px;
+    padding-right:56.0px;
+    padding-left:40.0px;
+    padding-top:16.0px;
+}
+
+
+
+#my-toggle-switch {
+    padding-top:0.0px;
+}
+
+#line-plot-2 {
+    height: 320.0px;
+    padding-right:24.0px;
+    padding-left:auto;
+    margin-bottom:24.0px;
+}
+
+
+@media (max-width: 1050px) {
+    .dash-table-container:not(#output-comparison-tablesummary-data) {
+        font-size: 10px; /* Reduced font size for cells */
+    }
+   
+    .dash-table-container:not(#output-comparison-tablesummary-data) .dash-cell div {
+        font-size: 10px; /* Reduced font size for cells */
+    }
+    
+    .dash-table-container:not(#output-comparison-tablesummary-data) .column-header div {
+        font-size: 10px; /* Reduced font size for headers */
+    }
+
+    #cattle-graph-container {
+        margin-bottom: 16px !important;
+    }
+}
+
+@media (max-width: 950px) {
+    #decision-input-contents {
+        flex-direction: column; /* Stack children vertically */
+    }
+    .upper-row-section{
+        margin-left:0;
+        margin-right:16.0px;
+    }
+
+}
+
+@media (max-width: 950px) {
+    #decision-input-contents {
+        flex-direction: column; /* Stack children vertically */
+    }
+    .upper-row-section{
+        margin-left:0;
+    }
+
+  
+
+
+    
+}
+
+
+@media (max-width: 820px) {
+    #comparison-section-button{
+        font-size:19px !important;
+    }
+
+    #table-summary-description {
+        font-size: 12px !important;
+    }
+    
+    #output-comparison-tablesummary-data {
+        font-size: 10px; /* Reduced font size for cells */
+    }
+   
+    #output-comparison-tablesummary-data .dash-cell div {
+        font-size: 10px; /* Reduced font size for cells */
+    }
+    
+    #output-comparison-tablesummary-data .column-header div {
+        font-size: 10px; /* Reduced font size for headers */
+    }
+
+    #comparison-summary-container {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 750px) {
+
+    
+
+    #comparison-section-button{
+        font-size:19px !important;
+    }
+
+    #table-summary-description {
+        font-size: 12px !important;
+    }
+
+
+    #summary-decision-text .variable-style {
+        color: #cf8b0e;
+        font-size: 17px !important;
+        vertical-align: middle;
+    }
+    
+    #summary-decision-text .text-style {
+        font-size: 14px !important;
+        vertical-align: middle;
+    
+    }
+
+  
+}
+
+
+@media (max-width: 650px) {
+
+    #tabs {
+        width:97% !important;
+    }
+
+    #plot-and-slider-container, #plot-and-switch-container {
+        padding-top: 64.0px;
+    }
+    
+
+    #output_text, #output_text2 {
+        display:none;
+    }
+
+    #comparison-summary-container {
+        padding: 0 8.0px !important;
+    }
+
+    #comparison-section-button{
+        font-size:15px !important;
+    }
+
+    #table-summary-description {
+        font-size: 10px !important;
+    }
+    
+    .dash-table-container {
+        width: 100%; /* or any desired width */
+        overflow-x: auto; /* Enable horizontal scrollbar */
+        display: block;
+    }
+
+    #output-comparison-tablesummary-data {
+        width: 100%; /* or any desired width */
+        overflow-x: auto; /* Enable horizontal scrollbar */
+        display: block; /* Ensures the table behaves like a block element */
+    }
+
+    #comparisons-container {
+        width: 100% !important; 
+        margin: 0 !important;
+     }
+
+    #summary-decision-text .variable-style {
+        color: #cf8b0e;
+        font-size: 15px !important;
+        vertical-align: middle;
+        
+
+    }
+    
+    #summary-decision-text .text-style {
+        font-size: 12px !important;
+        vertical-align: middle;
+    
+    }
+
+
+    
+
+}
+
+
+@media (min-width: 1000px) {
+    /*For desktop*/
+ 
+
+    #logo {
+        width: 130px;
+        height: auto;
+    }
+
+    #header p {
+        font-size: 12.0px;
+    }
+
+    #graph-container, #cattle-graph-container {
+        flex: 4 40%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        max-height: 585px;
+    }
+
+   
+
+    /* #line-plot {
+        flex-grow: 1;
+    } */
+}
+
+@media (max-width: 550px) {
+
+    #tabs {
+        width:95% !important;
+    }
+
+    #logo {
+        width: 80px;
+        margin-left:-32.0px;
+        height: auto;
+    }
+
+    #graph-container {
+        margin-top: 8.0px;
+        padding: 8.0px;
+
+    }
+    
+    #cattle-graph-container{
+        margin-top: 0.0px !important;
+
+    }
+
+    #line-plot .xtick text{
+        font-size: 8.8px !important;
+    }
+
+    #line-plot .gtitle{
+        font-size: 13.6px !important;
+    }
+
+   
+    #line-plot-2 .xtick text,
+    #line-plot-2 .x2y2 text {
+        font-size: 8.8px !important;
+        transform: none !important;
+    }
+
+    #line-plot-2 .gtitle{
+        font-size: 13.6px !important;
+    }
+
+
+
+    #slider-container {
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px lightgrey;
+        background-color: #dbe5f3;
+        padding: 16.0px 48.0px 32.0px 32.0px;
+        height: 64.0px;
+    }
+
+    #slct_year {
+        margin-right:9.6px;
+        margin-left:52.8px;
+        margin-top: -16.0px;
+
+    }
+    .rc-slider-mark{
+        font-size: 24px !important;
+    }
+
+    #line-plot {
+        padding-right:24.0px !important;
+        padding-left:24.0px;
+        padding-top:8.0px;
+    }
+
+    #line-plot-2{
+        padding-left:24.0px;
+        width: 100% !important;
+    }
+
+    
+}
+
+#resources-button-hidden{
+    display:none;
+}
+
+@media (max-width: 450px) {
+
+    #description-logo-container{
+        margin-top: 10px;
+    }
+
+    #line-plot-2 {
+        padding-right:0.0px !important;
+        padding-left:0.0px !important;
+    }
+
+    #line-plot {
+        padding-right:8.0px !important;
+        padding-left:8.0px;
+    }
+
+    #slct_year {
+        padding-right:9.6px !important;
+        margin-left:36.8px;
+        margin-top: -16.0px;
+
+    }
+
+    #summary-option1 .option-decision-picture{
+        height: 95%;
+        width: 95%;
+    }
+
+    #controls-container {
+        display: flex;
+        justify-content: space-between; /* distributes items evenly */
+    }
+
+    #location-container {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+    }
+     
+    #location-container{
+        margin-left: 8.0px !important;
+    }
+
+
+    #location-elements {
+        display: flex  !important;
+        flex-direction: row  !important;
+        align-items: center !important ;
+        /* Add any additional styling as needed */
+    }
+
+    #resources-button-hidden {
+        margin-left: auto !important; /* Pushes the button to the right */
+        margin-right: 15px !important;
+    }
+    
+    #page-links {
+        width: 100%;
+        display: flex !important;
+        flex-direction: row !important;
+        /* removed margin-right: 160.0px; */
+        justify-content: space-between !important;
+    }
+    
+    .page-link {
+        flex-grow: 1 !important;
+        margin-left: 5px !important;  /* adjust this value for desired spacing */
+        margin-right: 5px !important; /* adjust this value for desired spacing */
+        font-size: 10px !important;
+        width: 20px !important;
+    }
+    
+    .page-link:first-child {
+        margin-left: 0 !important;
+    }
+    
+    .page-link:last-child {
+        margin-right: 0 !important;
+    }
+    .page-button{
+        width: 100%;
+    }
+    
+    #resources_text{
+        padding-bottom: 30px !important;
+    }
+
+    #resources-button-hidden{
+        display:flex !important;
+    }
+
+    #resources-button {
+        display: none !important;
+    }
+
+    #resources-link-hidden {
+        display: none !important;
+    }
+    
+
+    #heatmap-header-container {
+        display: flex !important;
+        align-items: flex-start !important;
+        padding: 0 !important;
+        font-size: 11px !important;
+        margin-bottom: 5px !important;
+        margin-top: 10px !important;
+        margin-left: 15px !important;
+    }
+    
+    #checkboxes-map {
+        position: relative !important;
+        z-index: 1 !important; 
+        display: inline-block !important;
+    }
+    
+    #output_container, #checkboxes-map {
+        margin: 0 !important;
+        margin-right: 10px !important;
+        display: inline-block !important;
+    }
+    
+    #checkboxes-map label {
+        margin-right: 5px !important;
+        display: inline-block !important;
+    }
+    
+    label input[type="checkbox"] {
+        margin-right: 2.5px !important;
+    
+    }
+    
+    #forecast_summary, #econ_summary{
+        display: none;
+    }
+
+    #my-toggle-switch{
+        margin-bottom: 8.0px !important;
+    }
+
+    #price-weight-graph{
+        padding-left: 4px !important;
+        padding-right:13px !important;
+    }
+
+
+}
+
+
+
+#chart-dropdown {
+    margin-bottom: 52.8px;
+}
+
+/* Dropdown
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#autocomplete-input .Select-value {
+    cursor: pointer;
+}
+
+#autocomplete-input .Select-control { 
+    color: #273747 ;
+    background-color: #273747 ;
+    border: 0px solid transparent;
+}
+
+#autocomplete-input .Select {
+    color: #273747 ;
+    border: 0px ;
+    border-color: transparent;
+}
+
+#autocomplete-input .Select-menu-outer {
+    background-color: white ;
+    border: 0px ;
+    z-index: 9999 ; /* This will ensure that the dropdown options always appear on top */
+}
+
+#autocomplete-input .Select div {
+    background-color:white ;
+
+}
+
+#autocomplete-input .Select-menu-outer div:hover {
+    background-color: rgba(255, 255, 255, 0.01);
+    cursor: pointer;
+}
+
+#autocomplete-input .Select-value-label {
+    color: #2c3d4e ;
+}
+
+#autocomplete-input .Select--single > .Select-control .Select-value, .Select-placeholder {
+    border: 0px ;
+    border-radius: 0px ;
+    border-color: transparent;
+}
+
+
+
+/* Placement
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#app-container {
+    margin-top: 8.0px;
+}
+
+
+@media only screen and (max-width: 1250px) {
+    /*For mobile and smaller screens*/
+    #app-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        margin-bottom: 0.0px;
+    }
+
+
+ 
+}
+
+#page-links {
+    display: flex;
+    flex-direction: row;
+    margin-right: 160.0px;
+
+
+}
+
+.page-button {
+    border-radius: 5px;
+}
+
+#page-links {
+    display: flex;
+    flex-direction: row;
+    /* removed margin-right: 160.0px; */
+    justify-content: space-between;
+}
+
+#page-link {
+    flex-grow: 1;
+    margin-left: 10px; /* adjust this value for desired spacing */
+    margin-right: 10px; /* adjust this value for desired spacing */
+}
+
+#page-link:first-child {
+    margin-left: 0;
+}
+
+#page-link:last-child {
+    margin-right: 0;
+}
+
+
+
+@media (max-width: 1150px) {
+    .page-link .page-button {
+        font-size: 0.8em; /* reduce the font size */
+        padding: 0px 12px; /* adjust padding as desired */
+        border-radius: 5px; /* adjust border-radius if necessary */
+    }
+
+    #page-links {
+        margin-left: 16.0px;
+    
+    }
+}
+
+
+
+@media only screen and (max-width: 550px) {
+    #location-container{
+        margin-left: 8.0px;
+    }
+
+    #description-container, #header{
+        margin-left: 0px !important;
+    }
+
+    #page-links {
+        display: flex !important;           /* This will make its children display in a row */
+        justify-content: space-between!important; /* This will add space between each child */
+        margin-left: 0.0px!important;
+    }
+    
+    #page-link {
+        flex: 1!important;                 /* This makes each child take up an equal amount of space */
+    }
+
+    #header-title {
+        flex-direction: column; /* Change direction of flex items */
+    }
+    #logo{
+        height:80.0px;
+        width: auto;
+    }
+
+   
+
+    .description-container {
+        order: 2; /* Ensure description container comes after the logo */
+        width: 100%; /* Adjust width as needed */
+    }
+
+}
+
+
+@media (min-width: 1051px) {
+    /*For desktop*/
+    #app-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: stretch;
+        height: 100%;
+        margin-bottom: 0.0px;
+    }
+
+}
+
+#header {
+    margin-left: 1.5%;
+}
+
+
+div, svg {
+    user-select: auto !important;
+}
+
+._dash-undo-redo {
+    display: none;
+}
+
+
+/* Econ
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+
+
+
+
+#cattle-graph-container {
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px lightgrey;
+    margin: 0;
+    margin-bottom: 0.0px;
+    background-color: #282b3f;
+    padding-left: 16.0px;
+    padding-top:24.0px;
+    padding-bottom:24.0px;
+    position: static;
+    width: 100%;
+}
+
+
+
+
+
+
+#hay-graph-container {
+    position: static;
+    padding-top:24.0px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px lightgrey;
+    margin: 0;
+    background-color: #282b3f;
+    padding-left: 16.0px;
+    height: 377px;
+    
+}
+
+
+
+
+
+
+#econ-toggle-container {
+    display:flex;
+    padding-left: 16.0px;
+    margin-top:8.0px;
+}
+
+#switch-output {
+    display: inline-block;
+    padding-left: 8.0px;
+    padding-top:4.0px;
+    font-size: 13px;
+    color: #dbe5f3;
+    font-weight: bold;
+}
+
+
+
+#box-trend-graph {
+    height:240px;
+    width: 90%;
+    margin: 5px 0.0px auto 1em; /* 0 top, auto left/right, 2em bottom */
+}
+
+
+
+#cattle-type-dropdown-cattle .Select-control, 
+#location-dropdown-cattle .Select-control, 
+#state-dropdown-cattle .Select-control,
+#location-dropdown-hay .Select-control,
+#state-dropdown-hay .Select-control,
+#hay-grade-dropdown .Select-control,
+#hay-class-dropdown .Select-control {
+    color: #282b3f;
+    background-color: transparent;
+    border: 0px solid transparent;
+
+}
+
+#cattle-type-dropdown-cattle .Select input, 
+#location-dropdown-cattle .Select input, 
+#state-dropdown-cattle .Select input,
+#location-dropdown-hay .Select input,
+#state-dropdown-hay .Select input,
+#hay-grade-dropdown .Select input,
+#hay-class-dropdown .Select input {
+    color: #dbe5f3;
+}
+
+
+#cattle-type-dropdown-cattle .Select, 
+#location-dropdown-cattle .Select, 
+#state-dropdown-cattle .Select,
+#location-dropdown-hay .Select,
+#state-dropdown-hay .Select,
+#hay-grade-dropdown .Select,
+#hay-class-dropdown .Select {
+    color: #dbe5f3;
+}
+
+#cattle-type-dropdown-cattle .Select-menu-outer, 
+#location-dropdown-cattle .Select-menu-outer, 
+#state-dropdown-cattle .Select-menu-outer,
+#location-dropdown-hay .Select-menu-outer,
+#state-dropdown-hay .Select-menu-outer,
+#hay-grade-dropdown .Select-menu-outer,
+#hay-class-dropdown .Select-menu-outer {
+    background-color: #282b3f;
+    border: 0px;
+    border-color: transparent !important;
+    z-index: 9999; /* This will ensure that the dropdown options always appear on top */
+}
+
+#cattle-type-dropdown-cattle .Select div, 
+#location-dropdown-cattle .Select div, 
+#state-dropdown-cattle .Select div,
+#location-dropdown-hay .Select div,
+#state-dropdown-hay .Select div,
+#hay-grade-dropdown .Select div,
+#hay-class-dropdown .Select div {
+    background-color: #282b3f;
+}
+
+#cattle-type-dropdown-cattle .Select-menu-outer div:hover, 
+#location-dropdown-cattle .Select-menu-outer div:hover, 
+#state-dropdown-cattle .Select-menu-outer div:hover,
+#location-dropdown-hay .Select-menu-outer div:hover,
+#state-dropdown-hay .Select-menu-outer div:hover,
+#hay-grade-dropdown .Select-menu-outer div:hover,
+#hay-class-dropdown .Select-menu-outer div:hover {
+    background-color: rgba(255, 255, 255, 0.01);
+    cursor: pointer;
+}
+
+#cattle-type-dropdown-cattle .Select-value-label, 
+#location-dropdown-cattle .Select-value-label, 
+#state-dropdown-cattle .Select-value-label,
+#location-dropdown-hay .Select-value-label,
+#state-dropdown-hay .Select-value-label,
+#hay-grade-dropdown .Select-value-label,
+#hay-class-dropdown .Select-value-label {
+    color: #dbe5f3;
+}
+
+#cattle-type-dropdown-cattle .Select--single > .Select-control .Select-value, 
+#cattle-type-dropdown-cattle .Select--single > .Select-control .Select-placeholder, 
+#location-dropdown-cattle .Select--single > .Select-control .Select-value, 
+#location-dropdown-cattle .Select--single > .Select-control .Select-placeholder, 
+#state-dropdown-cattle .Select--single > .Select-control .Select-value, 
+#state-dropdown-cattle .Select--single > .Select-control .Select-placeholder,
+#location-dropdown-hay .Select--single > .Select-control .Select-value, 
+#location-dropdown-hay .Select--single > .Select-control .Select-placeholder, 
+#state-dropdown-hay .Select--single > .Select-control .Select-value, 
+#state-dropdown-hay .Select--single > .Select-control .Select-placeholder,
+#hay-grade-dropdown .Select--single > .Select-control .Select-value, 
+#hay-grade-dropdown .Select--single > .Select-control .Select-placeholder,
+#hay-class-dropdown .Select--single > .Select-control .Select-value, 
+#hay-class-dropdown .Select--single > .Select-control .Select-placeholder {
+    border: 0px;
+    border-radius: 0px;
+    border: 0px solid transparent;
+
+}
+
+
+
+.econ-dropdown-container {
+    display: flex;
+    margin: 0.0px 16.0px 0.0px;
+}
+
+#grouped-dropdowns, #grouped-dropdowns-hay{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    margin-left: 8.0px;
+
+}
+
+#title-dropdown-container {
+    width: 25%;
+    color:white;
+    margin:0;
+}
+
+#state-dropdown-container {
+    width: 15%;
+}
+#location-dropdown-container {
+    width: 55%;
+}
+#type-dropdown-container {
+    width: 30%;
+}
+
+#hay-title-dropdown-container {
+    width: 20%;
+    color:white;
+    margin:0;
+}
+#class-dropdown-container {
+    width: 19%;
+}
+#grade-dropdown-container {
+    width: 25%;
+}
+#hay-state-dropdown-container {
+    width: 20%;
+}
+#hay-location-dropdown-container {
+    width: 55%;
+}
+
+
+
+.dropdown-title{
+    color:#dbe5f3;
+    margin-bottom: -5px;
+    margin-left:8.0px;
+    z-index: 99999999; /* This will ensure that the dropdown options always appear on top */
+
+}
+
+
+#title-table-econ-container {
+    color:white;
+    margin:0.0px 16.0px 5px;
+}
+
+
+
+#info-container-econ{
+    display:flex;
+    margin: 0;
+    margin-bottom: 16.0px;
+
+    width: 100%;
+    position: static;
+    display: flex; /* Flexbox container */
+    justify-content: space-between;
+
+}
+
+
+
+
+
+#price-weight-graph-container {
+    flex-grow: 1;
+    flex: 1;    
+    padding-top: 4.0px;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 10px;  /* or whatever specific space you want */
+    background-color: #282b3f;
+    vertical-align: middle;
+    justify-content: initial !important; 
+    align-items: initial !important;
+    width: auto; 
+    min-width: 0;
+    
+}
+
+#price-weight-title {
+    color:white;
+    margin-top: 12.0px;
+    padding-left:32.0px;
+
+}
+
+#price-weight-graph {
+    height:143px;
+    width: 100% !important; 
+    margin: 0;
+    padding-top:8.0px;
+    padding-bottom:8.0px;
+    padding-left: 17.0px;
+    padding-right: 26.0px;
+    box-sizing: border-box;  
+}
+
+
+
+
+#forecast_summary {
+    flex: 1;
+    padding-top: 4.0px;
+    padding-bottom: 4.0px !important;
+    margin-top: 0;
+    margin-right: 0;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: auto; 
+    min-width: 0;
+}
+
+
+
+#forecas-summary-box{
+    margin: 8.0px 16.0px 0.0px
+}
+
+.button-container-econ{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 8.0px;
+    padding-bottom: 8.0px;
+
+}
+
+.button-style-forecast {
+    margin-right: 16.0px;
+    border-radius: 10px;
+    font-size: 12px;
+    display: flex;
+    box-sizing: border-box;  /* Include padding and border in the button's total width and height */
+    line-height: 36px;  /* Match the button height to vertically center the text */
+}
+
+.button-style-forecast:hover{
+    background-color:  #282b3f ;
+    color: #dbe5f3;
+}
+
+
+#table-econ {
+    margin-left: 56.0px;
+    margin-right: 40.0px;
+    margin-top: -12.0px;
+
+}
+
+
+
+#location-dropdown-hay .Select-control {
+    color: #282b3f ;
+    background-color: #282b3f ;
+}
+
+#location-dropdown-hay .Select {
+    color: #dbe5f3  ;
+}
+
+
+
+
+#location-dropdown-hay .Select-menu-outer {
+    background-color: #282b3f ;
+    border: 0px;
+    z-index: 9999; /* This will ensure that the dropdown options always appear on top */
+}
+
+#location-dropdown-hay .Select div {
+    background-color:#282b3f ;
+}
+
+#location-dropdown-hay .Select-menu-outer div:hover {
+    background-color: rgba(255, 255, 255, 0.01);
+    cursor: pointer;
+}
+
+#location-dropdown-hay .Select-value-label {
+    color: #dbe5f3;
+}
+
+#location-dropdown-hay .Select--single > .Select-control .Select-value, .Select-placeholder {
+    border: 0px ;
+    border-radius: 0px ;
+}
+
+
+#indicator-hay-graph {
+    height:230px;
+    width: 90%;
+    margin: 16.0px 0.0px auto 1em; /* 0 top, auto left/right, 2em bottom */
+
+}
+
+
+
+/* Decision
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+
+#decision-input-container {
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px lightgrey;
+    margin: 0;
+    padding: 0;
+    background-color: #efb750;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; /* Allow wrapping in case there's not enough space */
+    justify-content: center;  /* Vertically centers child elements */
+}
+
+#decision-input-contents {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Allow wrapping in case there's not enough space */
+    justify-content: left;  /* Horizontally centers child elements */
+    padding-left:8.0px
+}
+
+#summary-table {
+    display: flex !important;;
+    justify-content: center !important;
+    align-items: center !important;;
+    height: 100%  !important;; /* or set to a specific height if you want */
+}
+
+
+.dash-table-container {
+    display:flex !important;
+    width: 100% !important;
+    justify-content: center !important;
+    margin: auto !important;; /* This centers the table inside the flex container */
+}
+
+
+
+#summary-decision-text .variable-style {
+    color: #cf8b0e;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+#summary-decision-text .text-style {
+    font-size: 15px;
+    vertical-align: middle;
+
+}
+
+/* Media query for screen widths 1100px or less */
+
+
+
+.decision-input-group label {
+    flex-shrink: 0;          /* Prevents the label from shrinking */
+    margin-right: 5px;      /* Provides spacing between label and input */
+}
+
+.decision-input-group input {
+    padding:4.0px;
+    width: 60.0px;
+    height: 16.0px;           
+}
+
+#option1-table-container {
+    height: auto !important;
+    display: block;
+}
+
+/* Styling for the table */
+table {
+    width: 100%; 
+    border-collapse: collapse; 
+}
+
+/* Reduce space between rows */
+table tr {
+    line-height: 1.2; 
+}
+
+/* Styling for table headers */
+table th {
+    text-align: left;
+    padding: 8px; 
+}
+
+/* Styling for table data cells */
+
+table td {
+    padding: 5px;
+    font-size: 12px!important;
+
+}
+
+#upper-row-container .table-wrapper td {
+    padding: 3px;
+    font-size: 11.5px !important;
+    border-bottom: 0.1px solid rgb(97, 96, 96) !important;
+}
+
+#button-cows, #button-calves, #button-drought, #button-other-info {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+/* Adjust the height and width of input cells */
+table td input[type="number"] {
+    width: 57.6px;   /* You can adjust the width percentage as needed */
+    height: 20.0px; /* Adjust height as required */
+    padding: 4px 3px;
+    box-sizing: border-box;
+}
+
+
+#options-container {
+    position: relative;
+    margin: 20.0px 0 0 0;
+    background-color: transparent;
+    width: 100%;
+    display: inline;
+    flex-direction: column;
+    flex-wrap: wrap; /* Allow wrapping in case there's not enough space */
+    justify-content: space-between;
+}
+
+/* Container for each row */
+.row-container {
+    float: left;   /* To line them up side by side */
+    width: 33.33%;    /* Since there are 3 options. 100% divided by 3 */
+    padding: 1%;   /* A little padding to ensure they don’t touch each other */
+    box-sizing: border-box;  /* This ensures padding is included in the width calculation */
+    display: flex;
+    flex-direction: column; /* This ensures the children are stacked vertically */
+    align-items: center; /* This centers the children horizontally */
+    justify-content: center;
+}
+
+@media (max-width: 1100px) {
+    .row-container {
+        float: none; /* This removes the float, causing them to stack vertically */
+        width: 100%; /* Allows them to take up the full width */
+    }
+}
+
+#toggle-button1, #toggle-button2, #toggle-button3{
+    background-color: transparent !important;  /* Transparent background */
+    border: none !important;                   /* No border */
+    font-size: larger;                         /* Increased font size */
+    color: black
+}
+
+/* Hover style for the button */
+#toggle-button1:hover, #toggle-button2:hover, #toggle-button3:hover {
+    background-color: transparent !important;  /* Transparent background on hover */
+    border: none !important;                   /* No border on hover */
+    color: rgb(153, 153, 156) !important;                /* Darker text color on hover */
+}
+
+
+#toggle-button1:focus #toggle-button2:focus #toggle-button3:focus {
+    background-color: transparent;
+    color: black;
+}
+
+
+.compare-button {
+    background-color: transparent !important;  /* Transparent background */
+    border: none !important;                   /* No border */
+    font-size: larger;                         /* Increased font size */
+    color: black
+}
+
+/* Hover style for the button */
+.compare-button:hover {
+    background-color: transparent !important;  /* Transparent background on hover */
+    border: none !important;                   /* No border on hover */
+    color: rgb(153, 153, 156) !important;                /* Darker text color on hover */
+}
+
+
+.compare-button:focus {
+    background-color: transparent;
+    color: black;
+}
+
+.compare-label-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.table-container table {
+    width: 100%;
+}
+.dash-table-container {
+    width: 100%;
+}
+
+.option-decision-description{
+    display: block;
+    margin-top: 24.0px;
+    margin-bottom: 24.0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    text-align: center;
+    font-size: 13px !important;
+}
+
+#output-comparison-summary{
+    display: block;
+    margin-top: 24.0px;
+    margin-bottom: 24.0px;
+    width: 100%;
+    text-align: center;
+}
+
+.option-decision-picture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 230px
+}
+
+
+/* Container for both upper and lower rows */
+#app-decision-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Makes sure the child elements stretch to full width of the parent */
+}
+
+/* Upper and lower rows */
+.row-decision {
+    display: flex;
+    flex-direction: column;
+    align-items: start; /* Aligns the child elements to the start of the row */
+    width: 100%; /* Takes up the full width available */
+}
+
+/* Individual sections in the upper row */
+.upper-row-section {
+    margin-bottom: 2em; /* Some space between sections for better visualization */
+}
+
+.table-wrapper {
+    display: inline-block;  
+    width: 100%; 
+    box-sizing: border-box; 
+    vertical-align: top;
+    padding-left: 8.0px
+}
+
+.tables-input-container {
+    display: flex;
+    flex-wrap: wrap;      
+    justify-content: space-between;
+}
+
+
+
+/* Individual sections in the lower row */
+.row-container {
+    margin-bottom: 1em; /* Some space between options for better visualization */
+}
+
+/* Styling for input groups and other related elements for better appearance */
+
+.upper-row-section {
+    margin-left: 8.0px; /* Adjust this value as needed */
+}
+
+.calves-column {
+    display: inline-block;
+    margin-right: 0.0px;  /* Add margin to the right for spacing */
+    margin-top: 0.8px;
+}
+
+/* General styling for tables in the table-container class */
+.table-container table {
+    width: 100%; 
+    border-collapse: collapse; 
+}
+
+/* Reduce space between rows */
+.table-container table tr {
+    line-height: 1.2;  /* Adjust this value to decrease or increase row height */
+}
+
+/* Styling for table headers */
+.table-container table th {
+    text-align: left;
+    padding: 4px; /* Reduced from 8px to decrease height */
+    margin: 0;    /* Ensure no additional spacing */
+}
+
+/* Styling for table data cells */
+.table-container table td {
+    padding: 4px; /* Reduced from 8px to decrease height */
+    margin: 0;    /* Ensure no additional spacing */
+}
+
+/* Adjust the height and width of input cells */
+.table-container table td input[type="number"] {
+    width: 80.0px;   /* Width remains unchanged */
+    height: 20.0px; /* Adjusted to 20.0px from 24.0px to slightly decrease height */
+    padding: 2px 6px; /* Reduced padding for further compactness */
+    box-sizing: border-box;
+}
+
+
+
+.table-container, .graph-container {
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+
+/* Adjust button styles if needed */
+.decision-collapse-button {
+    display: block; /* Makes the button take the full width */
+    text-align: left; /* Left-aligns the text on the button */
+    font-size: large;
+
+}
+
+.page-link {
+    display: inline-block !important;
+}
+
+/* Default style for the button */
+.unfold-button {
+    background-color: transparent !important;
+    border: none !important;
+    font-size: larger;
+    color: rgb(33, 39, 66); /* Default color */
+}
+
+/* Hover style for the button */
+.unfold-button:hover {
+    background-color: transparent !important;
+    border: none !important;
+    color: white !important; /* Black text color on hover */
+}
+
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner tr{
+    height: 20px !important;
+}
+
+#decision-input-container {
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px lightgrey;
+    margin: 0;
+    padding:0;
+    background-color: #efb750;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; /* Allow wrapping in case there's not enough space */
+    align-items: left;      /* Horizontally centers child elements */
+    justify-content: center;  /* Vertically centers child elements */
+}
+
+
+ #comparisons-container {
+    width: 80%; 
+    margin: 0 auto
+ }
+
+
+ #bottom-row-container {
+    display: flex;
+    flex-direction: column;   /* Stack contents vertically */
+    justify-content: center;  /* Horizontally center the content */
+    align-items: center;      /* Vertically center the content (if you want) */
+    height: 100%;             /* Assuming you want it to take full height */
+    
+}
+
+#comparison-summary-container {
+    position: relative;
+    margin: 20.0px 0 0 0;
+    background-color: transparent;
+    width: 80%;
+    display: inline;
+    flex-direction: column;
+    flex-wrap: wrap; /* Allow wrapping in case there's not enough space */
+    justify-content: space-between;
+}
+
+
+
+
+#output-comparison-tablesummary-data {
+    width:70%;
+    display: flex;
+}
+
+#comparison-section-button {
+    display: block;  /* Block makes it take the full width */
+    margin: 0 auto;  /* Center the button horizontally on the page */
+    background-color: transparent;  /* Transparent background */
+    border: none;  /* Remove borders */
+    font-size: 24px;  /* Adjust font size as desired */
+    color: rgb(33, 39, 66);  /* Color code for Bootstrap's primary color; adjust if you've changed the color */
+}
+
+/* If you want to set a hover effect */
+#comparison-section-button:hover {
+    background-color: transparent !important;
+    border: none !important;
+    color:  rgb(153, 153, 156) !important; /* Black text color on hover */
+    cursor: pointer;
+}
+
+/* To handle focus and active states, you might want to set a box-shadow or any other effect you prefer */
+#comparison-section-button:focus, #comparison-section-button:active {
+    outline: none;
+    box-shadow: none;  /* Remove default box-shadow set by Bootstrap */
+}
+
+#comparison-details-section-button{
+    background-color: transparent !important;  /* Transparent background */
+    border: none !important;                   /* No border */
+    font-size: larger;                         /* Increased font size */
+    color: black
+}
+
+/* Hover style for the button */
+#comparison-details-section-button:hover {
+    background-color: transparent !important;  /* Transparent background on hover */
+    border: none !important;                   /* No border on hover */
+    color: rgb(153, 153, 156) !important;                /* Darker text color on hover */
+}
+
+
+#comparison-details-section-button:focus {
+    background-color: transparent;
+    color: black;
+}
+
+/* Modal */
+
+
+
+#modal-logo{
+    width: 160.0px;
+    margin: 40.0px 48.0px 8.0px 48.0px;
+    align-self: center;
+}
+
+.modal-body{
+    font-size: 14px;
+    align-self: center;
+    margin: 24.0px;
+}
+
+
+
+#modal-close-button {
+    background-color: #282b3f;
+    color: #dbe5f3;
+    width: 60px;
+    line-height: 20px;
+    display: inline-block;
+    margin: 8.0px;             /* 4.0px margin to the left and right of each button */
+    text-align: center;
+    font-size: 10px;
+    border: 1px solid #dbe5f3;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    padding: 0; /* Ensure there's no padding extending the size */
+}
+
+
+
+#modal-close-button:focus{
+    background-color: #dbe5f3 !important;
+    color: #282b3f !important;
+}
+
+#modal-close-button:hover{
+    background-color: #dbe5f3 !important;
+    color: #282b3f !important;
+}
+
+@media (max-width: 600px) {
+    #welcome-modal{
+        margin: 40.0px
+    }
+
+    .modal-body{
+        font-size: 13px !important;
+       
+    }
+}
+
+@media (max-width: 600px) {
+    #modal-logo{
+        width: 128.0px !important;
+    }
+    .modal-body{
+        font-size: 12px !important;
+    }
+}
+
+/* Tooltip */
+
+
+.tooltip-inner {
+    color: #fff;
+    text-align: left;
+    padding:16.0px;
+    background-color: rgba(0, 0, 0, 0.9);
+    font-size: 12px ;
+}
+
+#info-tooltip .tooltip-inner {
+    max-width: 500px !important;
+    width: 500px !important;
+}
+
+@media (max-width: 450px) {
+
+    #info-tooltip .tooltip-inner {
+        max-width: 300px !important;
+        width: 300px !important;
+    }
+
+    .tooltip-inner {
+        font-size: 12px !important ;
+    }
+}
+
+
+#info_btn{
+    font-size: 20px;
+    color:grey;
+}
+
+#info_btn:hover {
+   color: #1a2e4f;  /* Slightly darker bluish color for hover effect */
+}
+
+#info-button-container {
+    position: relative;  /* Set the container to a relative position */
+    /* Other styles as needed */
+}
+
+#info-button-container {
+    position: absolute;  /* Position the icon absolutely within the container */
+    top: 16.0px;              /* Align to the top */
+    right: 16.0px;            /* Align to the right */
+
+}
+
+/* Resources page */
+
+#resources_text {
+    margin-top: 10px;
+    font-size: 15px !important;
+    background: rgb(248, 247, 247);
+    border-radius: 10px;
+    padding: 40px 0;
+    box-shadow: 2px 2px 2px rgb(229, 228, 228);
+}
+
+
+#resources_text hr {
+    width: 50%; /* Adjust this value to control the width of the <hr> */
+    margin: 0 auto; /* Centers the <hr> within its container */
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+#resources_intro_content {
+    margin: 0 50px;
+}
+
+#resources_details_content {
+    margin: 25px 100px ;
+}
+
+a {color: rgb(78, 135, 200); font-weight: bold;}
+
+a:visited { color: none; }
+
+
+
+.resources-picture-container {
+    display: flex; /* This turns the container into a flex container */
+    align-items: center; /* This vertically centers the items in the container */
+    justify-content: space-between; /* This adds space between the flex items */
+}
+
+.resources-picture {
+    height: 200px;
+    flex: 0 0 auto; /* This ensures the image does not grow or shrink */
+    margin-right: 30px; /* Optional: Adds some space between the image and the text */
+    margin-left: 10px;
+    margin-top: 10px;
+    align-self: flex-start; /* Aligns the image to the top of the container */
+}
+
+@media (max-width: 1100px) {
+    #resources_text {
+        font-size: 13px !important;
+    }
+
+    h2 {
+        font-size: 25px !important;
+    }
+
+    h3 {
+        font-size: 23px !important;
+    }
+
+}
+
+@media (max-width: 850px) {
+   
+    h2 {
+        font-size: 23px !important;
+    }
+
+    h3 {
+        font-size: 20px !important;
+    }
+
+    .resources-picture {
+        height: 150px !important;
+    }
+
+    #resources_details_content {
+        margin: 25px 50px !important ;
+    }
+
+}
+
+@media (max-width: 550px) {
+    #resources_text {
+        font-size: 11px !important;
+        padding: 15px 25px;
+        margin-top: 5px;
+    }
+
+    .resources-picture {
+        display: none; 
+    }
+
+    h2 {
+        font-size: 18px !important;
+    }
+
+    h3 {
+        font-size: 14px !important;
+    }
+
+    #resources_details_content {
+        margin: 0 !important ;
+    }
+
+    #resources_intro_content {
+        margin: 0 !important;
+    }
+}

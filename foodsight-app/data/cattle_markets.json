@@ -1,0 +1,1448 @@
+[
+    {
+        "slug_id": "1237",
+        "market_location_name": "Unionville Livestock Market LLC",
+        "market_location_state": "MO",
+        "market_location_city": "Unionville"
+    },
+    {
+        "slug_id": "1245",
+        "market_location_name": "Joplin Regional Stockyards (1)",
+        "market_location_state": "MO",
+        "market_location_city": "Carthage"
+    },
+    {
+        "slug_id": "1248",
+        "market_location_name": "New Cambria Livestock Market",
+        "market_location_state": "MO",
+        "market_location_city": "New Cambria"
+    },
+    {
+        "slug_id": "1249",
+        "market_location_name": "Ozarks Regional Stockyards",
+        "market_location_state": "MO",
+        "market_location_city": "West Plains"
+    },
+    {
+        "slug_id": "1254",
+        "market_location_name": "Green City Livestock Auction (1)",
+        "market_location_state": "MO",
+        "market_location_city": "Green City"
+    },
+    {
+        "slug_id": "1255",
+        "market_location_name": "Springfield Livestock Marketing Center",
+        "market_location_state": "MO",
+        "market_location_city": "Springfield"
+    },
+    {
+        "slug_id": "1280",
+        "market_location_name": "Oklahoma National Stockyards Market",
+        "market_location_state": "OK",
+        "market_location_city": "Oklahoma City"
+    },
+    {
+        "slug_id": "1281",
+        "market_location_name": "OKC West Livestock Market",
+        "market_location_state": "OK",
+        "market_location_city": "El Reno"
+    },
+    {
+        "slug_id": "1418",
+        "market_location_name": "Columbia Livestock Market",
+        "market_location_state": "FL",
+        "market_location_city": "Lake City"
+    },
+    {
+        "slug_id": "1419",
+        "market_location_name": "Okeechobee Livestock Auction (Tue)",
+        "market_location_state": "FL",
+        "market_location_city": "Okeechobee"
+    },
+    {
+        "slug_id": "1420",
+        "market_location_name": "Townsend Livestock Market",
+        "market_location_state": "FL",
+        "market_location_city": "Madison"
+    },
+    {
+        "slug_id": "1421",
+        "market_location_name": "Sumter County Farmers Market",
+        "market_location_state": "FL",
+        "market_location_city": "Webster"
+    },
+    {
+        "slug_id": "1422",
+        "market_location_name": "Arcadia Stockyard (Wed)",
+        "market_location_state": "FL",
+        "market_location_city": "Arcadia"
+    },
+    {
+        "slug_id": "1424",
+        "market_location_name": "Ocala Livestock Market",
+        "market_location_state": "FL",
+        "market_location_city": "Ocala"
+    },
+    {
+        "slug_id": "1607",
+        "market_location_name": "Cattlemen's Livestock Auction Market, Inc",
+        "market_location_state": "FL",
+        "market_location_city": "Lakeland"
+    },
+    {
+        "slug_id": "1608",
+        "market_location_name": "Okeechobee Livestock Auction (Mon)",
+        "market_location_state": "FL",
+        "market_location_city": "Okeechobee"
+    },
+    {
+        "slug_id": "1609",
+        "market_location_name": "Arcadia Stockyard (Mon)",
+        "market_location_state": "FL",
+        "market_location_city": "Arcadia"
+    },
+    {
+        "slug_id": "1622",
+        "market_location_name": "Windsor Livestock Auction",
+        "market_location_state": "MO",
+        "market_location_city": "Windsor"
+    },
+    {
+        "slug_id": "1684",
+        "market_location_name": "Cattlemens Livestock Auction - Glenwood, AR",
+        "market_location_state": "AR",
+        "market_location_city": "Glenwood"
+    },
+    {
+        "slug_id": "1773",
+        "market_location_name": "Miles City Livestock Commission",
+        "market_location_state": "MT",
+        "market_location_city": "Miles City"
+    },
+    {
+        "slug_id": "1774",
+        "market_location_name": "Public Auction Yards (1)",
+        "market_location_state": "MT",
+        "market_location_city": "Billings"
+    },
+    {
+        "slug_id": "1775",
+        "market_location_name": "Billings Livestock Commission (1)",
+        "market_location_state": "MT",
+        "market_location_city": "Billings"
+    },
+    {
+        "slug_id": "1776",
+        "market_location_name": "Public Auction Yards (2)",
+        "market_location_state": "MT",
+        "market_location_city": "Billings"
+    },
+    {
+        "slug_id": "1777",
+        "market_location_name": "Billings Livestock Commission (2)",
+        "market_location_state": "MT",
+        "market_location_city": "Billings"
+    },
+    {
+        "slug_id": "1781",
+        "market_location_name": "Clovis Livestock Auction",
+        "market_location_state": "NM",
+        "market_location_city": "Clovis"
+    },
+    {
+        "slug_id": "1782",
+        "market_location_name": "Roswell Livestock Auction",
+        "market_location_state": "NM",
+        "market_location_city": "Roswell"
+    },
+    {
+        "slug_id": "1783",
+        "market_location_name": "Cattlemen's Livestock Auction - Belen, NM",
+        "market_location_state": "NM",
+        "market_location_city": "Belen"
+    },
+    {
+        "slug_id": "1785",
+        "market_location_name": "Interstate Regional Stockyards (1)",
+        "market_location_state": "MO",
+        "market_location_city": "Cuba"
+    },
+    {
+        "slug_id": "1810",
+        "market_location_name": "Eastern Missouri Commission Company",
+        "market_location_state": "MO",
+        "market_location_city": "Bowling Green"
+    },
+    {
+        "slug_id": "1811",
+        "market_location_name": "Mo-Kan Livestock Market",
+        "market_location_state": "MO",
+        "market_location_city": "Butler"
+    },
+    {
+        "slug_id": "1812",
+        "market_location_name": "Farmington Regional Stockyards (1)",
+        "market_location_state": "MO",
+        "market_location_city": "Farmington"
+    },
+    {
+        "slug_id": "1813",
+        "market_location_name": "Lolli Brothers Livestock Market",
+        "market_location_state": "MO",
+        "market_location_city": "Macon"
+    },
+    {
+        "slug_id": "1814",
+        "market_location_name": "Interstate Regional Stockyards (2)",
+        "market_location_state": "MO",
+        "market_location_city": "Cuba"
+    },
+    {
+        "slug_id": "1815",
+        "market_location_name": "Kingsville Livestock Auction",
+        "market_location_state": "MO",
+        "market_location_city": "Kingsville"
+    },
+    {
+        "slug_id": "1816",
+        "market_location_name": "F&T Livestock Market",
+        "market_location_state": "MO",
+        "market_location_city": "Palmyra"
+    },
+    {
+        "slug_id": "1817",
+        "market_location_name": "South Central Regional Stockyards",
+        "market_location_state": "MO",
+        "market_location_city": "Vienna"
+    },
+    {
+        "slug_id": "1819",
+        "market_location_name": "Callaway Livestock Center (1)",
+        "market_location_state": "MO",
+        "market_location_city": "Kingdom City"
+    },
+    {
+        "slug_id": "1827",
+        "market_location_name": "McAlester Union Stockyards",
+        "market_location_state": "OK",
+        "market_location_city": "McAlester"
+    },
+    {
+        "slug_id": "1828",
+        "market_location_name": "Woodward Livestock Inc",
+        "market_location_state": "OK",
+        "market_location_city": "Woodward"
+    },
+    {
+        "slug_id": "1829",
+        "market_location_name": "Apache Livestock Auction",
+        "market_location_state": "OK",
+        "market_location_city": "Apache"
+    },
+    {
+        "slug_id": "1830",
+        "market_location_name": "Southern Oklahoma Livestock Auction",
+        "market_location_state": "OK",
+        "market_location_city": "Ada"
+    },
+    {
+        "slug_id": "1832",
+        "market_location_name": "Tulsa Stockyards Inc.",
+        "market_location_state": "OK",
+        "market_location_city": "Tulsa"
+    },
+    {
+        "slug_id": "1837",
+        "market_location_name": "Green City Livestock Auction (2)",
+        "market_location_state": "MO",
+        "market_location_city": "Green City"
+    },
+    {
+        "slug_id": "1838",
+        "market_location_name": "Callaway Livestock Center (2)",
+        "market_location_state": "MO",
+        "market_location_city": "Kingdom City"
+    },
+    {
+        "slug_id": "1841",
+        "market_location_name": "Douglas County Livestock Auction",
+        "market_location_state": "MO",
+        "market_location_city": "Ava"
+    },
+    {
+        "slug_id": "1842",
+        "market_location_name": "Farmington Regional Stockyards (2)",
+        "market_location_state": "MO",
+        "market_location_city": "Farmington"
+    },
+    {
+        "slug_id": "1845",
+        "market_location_name": "Joplin Regional Stockyards (2)",
+        "market_location_state": "MO",
+        "market_location_city": "Carthage"
+    },
+    {
+        "slug_id": "1847",
+        "market_location_name": "Central Missouri Sales Company",
+        "market_location_state": "MO",
+        "market_location_city": "Sedalia"
+    },
+    {
+        "slug_id": "1848",
+        "market_location_name": "Huss Livestock",
+        "market_location_state": "NE",
+        "market_location_city": "Kearney"
+    },
+    {
+        "slug_id": "1849",
+        "market_location_name": "Lexington",
+        "market_location_state": "NE",
+        "market_location_city": "Lexington"
+    },
+    {
+        "slug_id": "1850",
+        "market_location_name": "Ogallala",
+        "market_location_state": "NE",
+        "market_location_city": "Ogallala"
+    },
+    {
+        "slug_id": "1851",
+        "market_location_name": "Burwell",
+        "market_location_state": "NE",
+        "market_location_city": "Burwell"
+    },
+    {
+        "slug_id": "1852",
+        "market_location_name": "Bassett (1)",
+        "market_location_state": "NE",
+        "market_location_city": "Bassett"
+    },
+    {
+        "slug_id": "1853",
+        "market_location_name": "Ericson",
+        "market_location_state": "NE",
+        "market_location_city": "Ericson"
+    },
+    {
+        "slug_id": "1854",
+        "market_location_name": "Imperial",
+        "market_location_state": "NE",
+        "market_location_city": "Imperial"
+    },
+    {
+        "slug_id": "1855",
+        "market_location_name": "Tri-State",
+        "market_location_state": "NE",
+        "market_location_city": "McCook"
+    },
+    {
+        "slug_id": "1856",
+        "market_location_name": "Valentine",
+        "market_location_state": "NE",
+        "market_location_city": "Valentine"
+    },
+    {
+        "slug_id": "1857",
+        "market_location_name": "Crawford",
+        "market_location_state": "NE",
+        "market_location_city": "Crawford"
+    },
+    {
+        "slug_id": "1858",
+        "market_location_name": "Gordon",
+        "market_location_state": "NE",
+        "market_location_city": "Gordon"
+    },
+    {
+        "slug_id": "1860",
+        "market_location_name": "Bassett (2)",
+        "market_location_state": "NE",
+        "market_location_city": "Bassett"
+    },
+    {
+        "slug_id": "1870",
+        "market_location_name": "Four States Livestock Sales",
+        "market_location_state": "MD",
+        "market_location_city": "Hagerstown"
+    },
+    {
+        "slug_id": "1871",
+        "market_location_name": "Friends Livestock Auction",
+        "market_location_state": "MD",
+        "market_location_city": "Accident"
+    },
+    {
+        "slug_id": "1872",
+        "market_location_name": "Buckhannon Stockyards",
+        "market_location_state": "WV",
+        "market_location_city": "Buckhannon"
+    },
+    {
+        "slug_id": "1873",
+        "market_location_name": "Cattlemen's Livestock Exchange",
+        "market_location_state": "WV",
+        "market_location_city": "Caldwell"
+    },
+    {
+        "slug_id": "1876",
+        "market_location_name": "Preston Farmers Market",
+        "market_location_state": "WV",
+        "market_location_city": "Terra Alta"
+    },
+    {
+        "slug_id": "1878",
+        "market_location_name": "South Branch Valley Livestock Exchange",
+        "market_location_state": "WV",
+        "market_location_city": "Moorefield"
+    },
+    {
+        "slug_id": "1879",
+        "market_location_name": "Weston Livestock Marketing",
+        "market_location_state": "WV",
+        "market_location_city": "Weston"
+    },
+    {
+        "slug_id": "1880",
+        "market_location_name": "Jackson County Regional Livestock Market",
+        "market_location_state": "WV",
+        "market_location_city": "Ripley"
+    },
+    {
+        "slug_id": "1889",
+        "market_location_name": "Winter Livestock - Dodge City",
+        "market_location_state": "KS",
+        "market_location_city": "Dodge City"
+    },
+    {
+        "slug_id": "1891",
+        "market_location_name": "Winter Livestock - Pratt",
+        "market_location_state": "KS",
+        "market_location_city": "Pratt"
+    },
+    {
+        "slug_id": "1892",
+        "market_location_name": "Farmers and Ranchers Livestock Commission - Kansas",
+        "market_location_state": "KS",
+        "market_location_city": "Salina"
+    },
+    {
+        "slug_id": "1900",
+        "market_location_name": "Sterling",
+        "market_location_state": "CO",
+        "market_location_city": "Sterling"
+    },
+    {
+        "slug_id": "1901",
+        "market_location_name": "Winter - La Junta (1)",
+        "market_location_state": "CO",
+        "market_location_city": "La Junta"
+    },
+    {
+        "slug_id": "1902",
+        "market_location_name": "Winter - La Junta (2)",
+        "market_location_state": "CO",
+        "market_location_city": "La Junta"
+    },
+    {
+        "slug_id": "1903",
+        "market_location_name": "La Junta",
+        "market_location_state": "CO",
+        "market_location_city": "La Junta"
+    },
+    {
+        "slug_id": "1906",
+        "market_location_name": "Brush (1)",
+        "market_location_state": "CO",
+        "market_location_city": "Brush"
+    },
+    {
+        "slug_id": "1917",
+        "market_location_name": "Greencastle (1)",
+        "market_location_state": "PA",
+        "market_location_city": "Greencastle"
+    },
+    {
+        "slug_id": "1918",
+        "market_location_name": "Middleburg (1)",
+        "market_location_state": "PA",
+        "market_location_city": "Middleburg"
+    },
+    {
+        "slug_id": "1922",
+        "market_location_name": "Greencastle (2)",
+        "market_location_state": "PA",
+        "market_location_city": "Greencastle"
+    },
+    {
+        "slug_id": "1923",
+        "market_location_name": "Middleburg (2)",
+        "market_location_state": "PA",
+        "market_location_city": "Middleburg"
+    },
+    {
+        "slug_id": "1924",
+        "market_location_name": "Vintage",
+        "market_location_state": "PA",
+        "market_location_city": "Paradise"
+    },
+    {
+        "slug_id": "1925",
+        "market_location_name": "Waynesburg",
+        "market_location_state": "PA",
+        "market_location_city": "Waynesburg"
+    },
+    {
+        "slug_id": "1930",
+        "market_location_name": "Eastanollee",
+        "market_location_state": "GA",
+        "market_location_city": "Eastanollee"
+    },
+    {
+        "slug_id": "1932",
+        "market_location_name": "Upson County Livestock",
+        "market_location_state": "GA",
+        "market_location_city": "Thomaston"
+    },
+    {
+        "slug_id": "1934",
+        "market_location_name": "Southern Livestock",
+        "market_location_state": "GA",
+        "market_location_city": "Oak Park"
+    },
+    {
+        "slug_id": "1935",
+        "market_location_name": "Carnesville",
+        "market_location_state": "GA",
+        "market_location_city": "Carnesville"
+    },
+    {
+        "slug_id": "1936",
+        "market_location_name": "Lanier",
+        "market_location_state": "GA",
+        "market_location_city": "Gainesville"
+    },
+    {
+        "slug_id": "1937",
+        "market_location_name": "Pulaski Co",
+        "market_location_state": "GA",
+        "market_location_city": "Hawkinsville"
+    },
+    {
+        "slug_id": "1938",
+        "market_location_name": "Thomasville",
+        "market_location_state": "GA",
+        "market_location_city": "Thomasville"
+    },
+    {
+        "slug_id": "1939",
+        "market_location_name": "Ashburn",
+        "market_location_state": "GA",
+        "market_location_city": "Ashburn"
+    },
+    {
+        "slug_id": "1940",
+        "market_location_name": "Athens",
+        "market_location_state": "GA",
+        "market_location_city": "Athens"
+    },
+    {
+        "slug_id": "1941",
+        "market_location_name": "Donalsonville",
+        "market_location_state": "GA",
+        "market_location_city": "Donalsonville"
+    },
+    {
+        "slug_id": "1942",
+        "market_location_name": "Jackson",
+        "market_location_state": "GA",
+        "market_location_city": "Jackson"
+    },
+    {
+        "slug_id": "1943",
+        "market_location_name": "Moultrie",
+        "market_location_state": "GA",
+        "market_location_city": "Moultrie"
+    },
+    {
+        "slug_id": "1944",
+        "market_location_name": "Washington",
+        "market_location_state": "GA",
+        "market_location_city": "Washington"
+    },
+    {
+        "slug_id": "1945",
+        "market_location_name": "Americus",
+        "market_location_state": "GA",
+        "market_location_city": "Americus"
+    },
+    {
+        "slug_id": "1946",
+        "market_location_name": "Calhoun",
+        "market_location_state": "GA",
+        "market_location_city": "Calhoun"
+    },
+    {
+        "slug_id": "1947",
+        "market_location_name": "Fitzgerald",
+        "market_location_state": "GA",
+        "market_location_city": "Fitzgerald"
+    },
+    {
+        "slug_id": "1948",
+        "market_location_name": "Greensboro",
+        "market_location_state": "GA",
+        "market_location_city": "Greensboro"
+    },
+    {
+        "slug_id": "1949",
+        "market_location_name": "Carrollton",
+        "market_location_state": "GA",
+        "market_location_city": "Carrollton"
+    },
+    {
+        "slug_id": "1953",
+        "market_location_name": "Dalhart Livestock Auction",
+        "market_location_state": "TX",
+        "market_location_city": "Dalhart"
+    },
+    {
+        "slug_id": "1954",
+        "market_location_name": "Tulia Livestock Auction",
+        "market_location_state": "TX",
+        "market_location_city": "Tulia"
+    },
+    {
+        "slug_id": "1956",
+        "market_location_name": "Darlington Livestock Auction",
+        "market_location_state": "SC",
+        "market_location_city": "Darlington"
+    },
+    {
+        "slug_id": "1958",
+        "market_location_name": "Williamston Livestock Auction",
+        "market_location_state": "SC",
+        "market_location_city": "Williamston"
+    },
+    {
+        "slug_id": "1959",
+        "market_location_name": "Laurens Livestock Auction",
+        "market_location_state": "SC",
+        "market_location_city": "Laurens"
+    },
+    {
+        "slug_id": "1961",
+        "market_location_name": "Saluda Livestock Auction",
+        "market_location_state": "SC",
+        "market_location_city": "Saluda"
+    },
+    {
+        "slug_id": "1964",
+        "market_location_name": "Orangeburg Livestock Auction",
+        "market_location_state": "SC",
+        "market_location_city": "Orangeburg"
+    },
+    {
+        "slug_id": "1965",
+        "market_location_name": "United Producers Inc - Vincenes",
+        "market_location_state": "IN",
+        "market_location_city": "Vincennes"
+    },
+    {
+        "slug_id": "1966",
+        "market_location_name": "Indianapolis Stockyards",
+        "market_location_state": "IN",
+        "market_location_city": "Rockville"
+    },
+    {
+        "slug_id": "1967",
+        "market_location_name": "White River Valley Auction",
+        "market_location_state": "IN",
+        "market_location_city": "Worthington"
+    },
+    {
+        "slug_id": "1968",
+        "market_location_name": "Springville Feeder Cattle Auction",
+        "market_location_state": "IN",
+        "market_location_city": "Springville"
+    },
+    {
+        "slug_id": "1969",
+        "market_location_name": "Stoney Pike Livestock Auction",
+        "market_location_state": "IN",
+        "market_location_city": "Logansport"
+    },
+    {
+        "slug_id": "1980",
+        "market_location_name": "Finger Lakes Livestock Auction",
+        "market_location_state": "NY",
+        "market_location_city": "Canandaigua"
+    },
+    {
+        "slug_id": "1984",
+        "market_location_name": "Frisco City Stockyards",
+        "market_location_state": "AL",
+        "market_location_city": "Frisco City"
+    },
+    {
+        "slug_id": "1985",
+        "market_location_name": "Opp Stockyards",
+        "market_location_state": "AL",
+        "market_location_city": "Opp"
+    },
+    {
+        "slug_id": "1986",
+        "market_location_name": "New Brockton Stockyards",
+        "market_location_state": "AL",
+        "market_location_city": "New Brockton"
+    },
+    {
+        "slug_id": "1987",
+        "market_location_name": "Moulton Stockyards",
+        "market_location_state": "AL",
+        "market_location_city": "Moulton"
+    },
+    {
+        "slug_id": "1988",
+        "market_location_name": "Letohatchee Stockyards",
+        "market_location_state": "AL",
+        "market_location_city": "Letohatchee"
+    },
+    {
+        "slug_id": "1989",
+        "market_location_name": "Lineville Stockyards",
+        "market_location_state": "AL",
+        "market_location_city": "Ashland"
+    },
+    {
+        "slug_id": "1991",
+        "market_location_name": "Arab Stockyards",
+        "market_location_state": "AL",
+        "market_location_city": "Arab"
+    },
+    {
+        "slug_id": "1995",
+        "market_location_name": "Uniontown Stockyards",
+        "market_location_state": "AL",
+        "market_location_city": "Uniontown"
+    },
+    {
+        "slug_id": "1996",
+        "market_location_name": "Dothan Stockyards",
+        "market_location_state": "AL",
+        "market_location_city": "Dothan"
+    },
+    {
+        "slug_id": "1997",
+        "market_location_name": "Florence Stockyards",
+        "market_location_state": "AL",
+        "market_location_city": "Florence"
+    },
+    {
+        "slug_id": "1998",
+        "market_location_name": "Kilpatrick Stockyards",
+        "market_location_state": "AL",
+        "market_location_city": "Crossville"
+    },
+    {
+        "slug_id": "1999",
+        "market_location_name": "Roanoke Stockyards",
+        "market_location_state": "AL",
+        "market_location_city": "Roanoke"
+    },
+    {
+        "slug_id": "2000",
+        "market_location_name": "Brundidge Stockyards",
+        "market_location_state": "AL",
+        "market_location_city": "Troy"
+    },
+    {
+        "slug_id": "2001",
+        "market_location_name": "Cullman Stockyards",
+        "market_location_state": "AL",
+        "market_location_city": "Cullman"
+    },
+    {
+        "slug_id": "2002",
+        "market_location_name": "Livingston Stockyards",
+        "market_location_state": "AL",
+        "market_location_city": "Livingston"
+    },
+    {
+        "slug_id": "2003",
+        "market_location_name": "Ashville Stockyards",
+        "market_location_state": "AL",
+        "market_location_city": "Steele"
+    },
+    {
+        "slug_id": "2007",
+        "market_location_name": "Russellville Stockyards",
+        "market_location_state": "AL",
+        "market_location_city": "Russellville"
+    },
+    {
+        "slug_id": "2009",
+        "market_location_name": "Ft. Pierre Livestock Auction (1)",
+        "market_location_state": "SD",
+        "market_location_city": "Fort Pierre"
+    },
+    {
+        "slug_id": "2015",
+        "market_location_name": "Producers Livestock Auction Co - San Angelo",
+        "market_location_state": "TX",
+        "market_location_city": "San Angelo"
+    },
+    {
+        "slug_id": "2019",
+        "market_location_name": "St. Onge Livestock",
+        "market_location_state": "SD",
+        "market_location_city": "Saint Onge"
+    },
+    {
+        "slug_id": "2020",
+        "market_location_name": "Hub City Livestock Auction",
+        "market_location_state": "SD",
+        "market_location_city": "Aberdeen"
+    },
+    {
+        "slug_id": "2021",
+        "market_location_name": "Ft. Pierre Livestock Auction (2)",
+        "market_location_state": "SD",
+        "market_location_city": "Fort Pierre"
+    },
+    {
+        "slug_id": "2022",
+        "market_location_name": "Mitchell Livestock Auction",
+        "market_location_state": "SD",
+        "market_location_city": "Mitchell"
+    },
+    {
+        "slug_id": "2023",
+        "market_location_name": "Philip Livestock Auction",
+        "market_location_state": "SD",
+        "market_location_city": "Philip"
+    },
+    {
+        "slug_id": "2024",
+        "market_location_name": "Herreid Livestock Market",
+        "market_location_state": "SD",
+        "market_location_city": "Herreid"
+    },
+    {
+        "slug_id": "2025",
+        "market_location_name": "Mobridge Livestock Exchange",
+        "market_location_state": "SD",
+        "market_location_city": "Mobridge"
+    },
+    {
+        "slug_id": "2026",
+        "market_location_name": "Sioux Falls Regional Livestock",
+        "market_location_state": "SD",
+        "market_location_city": "Worthing"
+    },
+    {
+        "slug_id": "2036",
+        "market_location_name": "Cedar Livestock Auction",
+        "market_location_state": "UT",
+        "market_location_city": "Cedar City"
+    },
+    {
+        "slug_id": "2037",
+        "market_location_name": "Producers Livestock Marketing - Salina, UT",
+        "market_location_state": "UT",
+        "market_location_city": "Salina"
+    },
+    {
+        "slug_id": "2050",
+        "market_location_name": "North Arkansas Livestock Auction",
+        "market_location_state": "AR",
+        "market_location_city": "Green Forest"
+    },
+    {
+        "slug_id": "2051",
+        "market_location_name": "Benton County Sale Barn",
+        "market_location_state": "AR",
+        "market_location_city": "Siloam Springs"
+    },
+    {
+        "slug_id": "2052",
+        "market_location_name": "Arkansas Cattle Auction LLC",
+        "market_location_state": "AR",
+        "market_location_city": "Searcy"
+    },
+    {
+        "slug_id": "2053",
+        "market_location_name": "I-40 Livestock Auction",
+        "market_location_state": "AR",
+        "market_location_city": "Ozark"
+    },
+    {
+        "slug_id": "2055",
+        "market_location_name": "Cleburne County Livestock Auction",
+        "market_location_state": "AR",
+        "market_location_city": "Heber Springs"
+    },
+    {
+        "slug_id": "2057",
+        "market_location_name": "County Line Sale Barn",
+        "market_location_state": "AR",
+        "market_location_city": "Ratcliff"
+    },
+    {
+        "slug_id": "2058",
+        "market_location_name": "Hope Livestock Auction Inc.",
+        "market_location_state": "AR",
+        "market_location_city": "Hope"
+    },
+    {
+        "slug_id": "2059",
+        "market_location_name": "Ash Flat Livestock Auction Inc.",
+        "market_location_state": "AR",
+        "market_location_city": "Ash Flat"
+    },
+    {
+        "slug_id": "2061",
+        "market_location_name": "Crossville Livestock Auction",
+        "market_location_state": "TN",
+        "market_location_city": "Crossville"
+    },
+    {
+        "slug_id": "2062",
+        "market_location_name": "Carthage Livestock Auction",
+        "market_location_state": "TN",
+        "market_location_city": "Carthage"
+    },
+    {
+        "slug_id": "2064",
+        "market_location_name": "Dickson Livestock Auction",
+        "market_location_state": "TN",
+        "market_location_city": "Dickson"
+    },
+    {
+        "slug_id": "2065",
+        "market_location_name": "Huntingdon Livestock Auction",
+        "market_location_state": "TN",
+        "market_location_city": "Huntingdon"
+    },
+    {
+        "slug_id": "2066",
+        "market_location_name": "Knoxville Livestock Auction - Knoxville, TN",
+        "market_location_state": "TN",
+        "market_location_city": "Knoxville"
+    },
+    {
+        "slug_id": "2067",
+        "market_location_name": "Sweetwater Livestock Auction",
+        "market_location_state": "TN",
+        "market_location_city": "Sweetwater"
+    },
+    {
+        "slug_id": "2068",
+        "market_location_name": "Savannah Livestock Auction",
+        "market_location_state": "TN",
+        "market_location_city": "Savannah"
+    },
+    {
+        "slug_id": "2069",
+        "market_location_name": "Unionville Livestock Auction - Unionville, TN",
+        "market_location_state": "TN",
+        "market_location_city": "Unionville"
+    },
+    {
+        "slug_id": "2070",
+        "market_location_name": "Greenville Livestock Auction - Greenville, TN",
+        "market_location_state": "TN",
+        "market_location_city": "Greeneville"
+    },
+    {
+        "slug_id": "2071",
+        "market_location_name": "Lafayette Livestock Auction",
+        "market_location_state": "TN",
+        "market_location_city": "Lafayette"
+    },
+    {
+        "slug_id": "2080",
+        "market_location_name": "Pulaski Livestock Auction - Pulaski, TN",
+        "market_location_state": "TN",
+        "market_location_city": "Pulaski"
+    },
+    {
+        "slug_id": "2087",
+        "market_location_name": "Siler City Livestock Auction (1)",
+        "market_location_state": "NC",
+        "market_location_city": "Staley"
+    },
+    {
+        "slug_id": "2088",
+        "market_location_name": "Turnersburg Livestock Auction",
+        "market_location_state": "NC",
+        "market_location_city": "Turnersburg"
+    },
+    {
+        "slug_id": "2089",
+        "market_location_name": "North Wilkesboro Livestock Auction",
+        "market_location_state": "NC",
+        "market_location_city": "North Wilkesboro"
+    },
+    {
+        "slug_id": "2090",
+        "market_location_name": "Canton Livestock Auction",
+        "market_location_state": "NC",
+        "market_location_city": "Canton"
+    },
+    {
+        "slug_id": "2092",
+        "market_location_name": "Shelby Livestock Auction",
+        "market_location_state": "NC",
+        "market_location_city": "Shelby"
+    },
+    {
+        "slug_id": "2093",
+        "market_location_name": "Norwood Livestock Auction",
+        "market_location_state": "NC",
+        "market_location_city": "Norwood"
+    },
+    {
+        "slug_id": "2094",
+        "market_location_name": "Smithfield Livestock Auction",
+        "market_location_state": "NC",
+        "market_location_city": "Smithfield"
+    },
+    {
+        "slug_id": "2095",
+        "market_location_name": "Siler City Livestock Auction (2)",
+        "market_location_state": "NC",
+        "market_location_city": "Staley"
+    },
+    {
+        "slug_id": "2097",
+        "market_location_name": "Kist Livestock Auction",
+        "market_location_state": "ND",
+        "market_location_city": "Mandan"
+    },
+    {
+        "slug_id": "2098",
+        "market_location_name": "Napoleon Livestock Auction",
+        "market_location_state": "ND",
+        "market_location_city": "Napoleon"
+    },
+    {
+        "slug_id": "2099",
+        "market_location_name": "Stockmen's Livestock Exchange",
+        "market_location_state": "ND",
+        "market_location_city": "Dickinson"
+    },
+    {
+        "slug_id": "2101",
+        "market_location_name": "Torrington Livestock Commission Company (1)",
+        "market_location_state": "WY",
+        "market_location_city": "Torrington"
+    },
+    {
+        "slug_id": "2103",
+        "market_location_name": "Torrington Livestock Commission Company (2)",
+        "market_location_state": "WY",
+        "market_location_city": "Torrington"
+    },
+    {
+        "slug_id": "2104",
+        "market_location_name": "Winter Livestock - Riverton, WY",
+        "market_location_state": "WY",
+        "market_location_city": "Riverton"
+    },
+    {
+        "slug_id": "2112",
+        "market_location_name": "Meridian Livestock Auction",
+        "market_location_state": "MS",
+        "market_location_city": "Meridian"
+    },
+    {
+        "slug_id": "2113",
+        "market_location_name": "Southeast Mississippi Livestock Auction",
+        "market_location_state": "MS",
+        "market_location_city": "Hattiesburg"
+    },
+    {
+        "slug_id": "2114",
+        "market_location_name": "Tadlock Livestock Auction",
+        "market_location_state": "MS",
+        "market_location_city": "Forest"
+    },
+    {
+        "slug_id": "2116",
+        "market_location_name": "Philadelphia Livestock Auction",
+        "market_location_state": "MS",
+        "market_location_city": "Philadelphia"
+    },
+    {
+        "slug_id": "2117",
+        "market_location_name": "Brookhaven Livestock Auction",
+        "market_location_state": "MS",
+        "market_location_city": "Brookhaven"
+    },
+    {
+        "slug_id": "2118",
+        "market_location_name": "Tylertown Livestock Auction",
+        "market_location_state": "MS",
+        "market_location_city": "Tylertown"
+    },
+    {
+        "slug_id": "2119",
+        "market_location_name": "Winona Livestock Auction",
+        "market_location_state": "MS",
+        "market_location_city": "Winona"
+    },
+    {
+        "slug_id": "2120",
+        "market_location_name": "Lucedale Livestock Auction",
+        "market_location_state": "MS",
+        "market_location_city": "Lucedale"
+    },
+    {
+        "slug_id": "2122",
+        "market_location_name": "Macon Livestock Auction",
+        "market_location_state": "MS",
+        "market_location_city": "Macon"
+    },
+    {
+        "slug_id": "2123",
+        "market_location_name": "Peoples Livestock Auction",
+        "market_location_state": "MS",
+        "market_location_city": "Houston"
+    },
+    {
+        "slug_id": "2124",
+        "market_location_name": "Grenada Livestock Auction",
+        "market_location_state": "MS",
+        "market_location_city": "Grenada"
+    },
+    {
+        "slug_id": "2125",
+        "market_location_name": "Cattlemans Livestock Auction - West Point, MS",
+        "market_location_state": "MS",
+        "market_location_city": "West Point"
+    },
+    {
+        "slug_id": "2126",
+        "market_location_name": "Lipscomb Brother's Livestock Auction",
+        "market_location_state": "MS",
+        "market_location_city": "Como"
+    },
+    {
+        "slug_id": "2127",
+        "market_location_name": "Lexington Livestock Auction - Kentucky (1)",
+        "market_location_state": "KY",
+        "market_location_city": "Lexington"
+    },
+    {
+        "slug_id": "2128",
+        "market_location_name": "Lexington Livestock Auction - Kentucky (2)",
+        "market_location_state": "KY",
+        "market_location_city": "Lexington"
+    },
+    {
+        "slug_id": "2132",
+        "market_location_name": "Toppenish Livestock Commission",
+        "market_location_state": "WA",
+        "market_location_city": "Toppenish"
+    },
+    {
+        "slug_id": "2150",
+        "market_location_name": "Denison Livestock Auction",
+        "market_location_state": "IA",
+        "market_location_city": "Denison"
+    },
+    {
+        "slug_id": "2151",
+        "market_location_name": "Knoxville Livestock Auction - Iowa",
+        "market_location_state": "IA",
+        "market_location_city": "Knoxville"
+    },
+    {
+        "slug_id": "2152",
+        "market_location_name": "Sigourney Livestock Auction",
+        "market_location_state": "IA",
+        "market_location_city": "Sigourney"
+    },
+    {
+        "slug_id": "2155",
+        "market_location_name": "Dunlap Livestock Auction",
+        "market_location_state": "IA",
+        "market_location_city": "Dunlap"
+    },
+    {
+        "slug_id": "2156",
+        "market_location_name": "Tama Livestock Auction",
+        "market_location_state": "IA",
+        "market_location_city": "Tama"
+    },
+    {
+        "slug_id": "2158",
+        "market_location_name": "Lamoni Livestock Auction",
+        "market_location_state": "IA",
+        "market_location_city": "Lamoni"
+    },
+    {
+        "slug_id": "2159",
+        "market_location_name": "Russell Livestock Auction - Iowa",
+        "market_location_state": "IA",
+        "market_location_city": "Russell"
+    },
+    {
+        "slug_id": "2160",
+        "market_location_name": "Creston Livestock Auction",
+        "market_location_state": "IA",
+        "market_location_city": "Creston"
+    },
+    {
+        "slug_id": "2162",
+        "market_location_name": "Bloomfield Livestock Auction",
+        "market_location_state": "IA",
+        "market_location_city": "Bloomfield"
+    },
+    {
+        "slug_id": "2163",
+        "market_location_name": "Centerville Livestock Auction",
+        "market_location_state": "IA",
+        "market_location_city": "Centerville"
+    },
+    {
+        "slug_id": "2166",
+        "market_location_name": "Clarinda Livestock Auction",
+        "market_location_state": "IA",
+        "market_location_city": "Clarinda"
+    },
+    {
+        "slug_id": "2188",
+        "market_location_name": "Bowling Green Livestock Auction",
+        "market_location_state": "KY",
+        "market_location_city": "Bowling Green"
+    },
+    {
+        "slug_id": "2189",
+        "market_location_name": "Albany Livestock Auction",
+        "market_location_state": "KY",
+        "market_location_city": "Albany"
+    },
+    {
+        "slug_id": "2190",
+        "market_location_name": "Stanford Livestock Auction (1)",
+        "market_location_state": "KY",
+        "market_location_city": "Stanford"
+    },
+    {
+        "slug_id": "2191",
+        "market_location_name": "Stanford Livestock Auction (2)",
+        "market_location_state": "KY",
+        "market_location_city": "Stanford"
+    },
+    {
+        "slug_id": "2192",
+        "market_location_name": "Campbellsville Livestock Auction (1)",
+        "market_location_state": "KY",
+        "market_location_city": "Campbellsville"
+    },
+    {
+        "slug_id": "2194",
+        "market_location_name": "Somerset Livestock Auction",
+        "market_location_state": "KY",
+        "market_location_city": "Somerset"
+    },
+    {
+        "slug_id": "2195",
+        "market_location_name": "Flemingsburg Livestock Auction",
+        "market_location_state": "KY",
+        "market_location_city": "Flemingsburg"
+    },
+    {
+        "slug_id": "2196",
+        "market_location_name": "Ledbetter Livestock Auction (1)",
+        "market_location_state": "KY",
+        "market_location_city": "Ledbetter"
+    },
+    {
+        "slug_id": "2197",
+        "market_location_name": "Maysville Livestock Auction - Kentucky",
+        "market_location_state": "KY",
+        "market_location_city": "Maysville"
+    },
+    {
+        "slug_id": "2198",
+        "market_location_name": "Glasgow Livestock Auction (1)",
+        "market_location_state": "KY",
+        "market_location_city": "Glasgow"
+    },
+    {
+        "slug_id": "2199",
+        "market_location_name": "Smiths Grove Mammoth Cave Dairy Auction",
+        "market_location_state": "KY",
+        "market_location_city": "Oakland"
+    },
+    {
+        "slug_id": "2200",
+        "market_location_name": "Hopkinsville Livestock Auction",
+        "market_location_state": "KY",
+        "market_location_city": "Hopkinsville"
+    },
+    {
+        "slug_id": "2201",
+        "market_location_name": "Owensboro Livestock Auction",
+        "market_location_state": "KY",
+        "market_location_city": "Owensboro"
+    },
+    {
+        "slug_id": "2202",
+        "market_location_name": "Mount Sterling Livestock Auction",
+        "market_location_state": "KY",
+        "market_location_city": "Mount Sterling"
+    },
+    {
+        "slug_id": "2203",
+        "market_location_name": "Owenton Livestock Auction",
+        "market_location_state": "KY",
+        "market_location_city": "Owenton"
+    },
+    {
+        "slug_id": "2204",
+        "market_location_name": "Paris Livestock Auction",
+        "market_location_state": "KY",
+        "market_location_city": "Paris"
+    },
+    {
+        "slug_id": "2206",
+        "market_location_name": "Guthrie Livestock Auction",
+        "market_location_state": "KY",
+        "market_location_city": "Guthrie"
+    },
+    {
+        "slug_id": "2207",
+        "market_location_name": "Irvington Livestock Auction",
+        "market_location_state": "KY",
+        "market_location_city": "Irvington"
+    },
+    {
+        "slug_id": "2208",
+        "market_location_name": "Russell Springs Livestock Auction",
+        "market_location_state": "KY",
+        "market_location_city": "Russell Springs"
+    },
+    {
+        "slug_id": "2209",
+        "market_location_name": "Springfield Livestock Auction - Kentucky",
+        "market_location_state": "KY",
+        "market_location_city": "Springfield"
+    },
+    {
+        "slug_id": "2210",
+        "market_location_name": "Richmond Livestock Auction",
+        "market_location_state": "KY",
+        "market_location_city": "Richmond"
+    },
+    {
+        "slug_id": "2211",
+        "market_location_name": "Upton Livestock Auction",
+        "market_location_state": "KY",
+        "market_location_city": "Upton"
+    },
+    {
+        "slug_id": "2212",
+        "market_location_name": "Campbellsville Livestock Auction (2)",
+        "market_location_state": "KY",
+        "market_location_city": "Campbellsville"
+    },
+    {
+        "slug_id": "2213",
+        "market_location_name": "Cattleman's Livestock Auction - Bowling Green",
+        "market_location_state": "KY",
+        "market_location_city": "Rockfield"
+    },
+    {
+        "slug_id": "2221",
+        "market_location_name": "Ledbetter Livestock Auction (2)",
+        "market_location_state": "KY",
+        "market_location_city": "Ledbetter"
+    },
+    {
+        "slug_id": "2229",
+        "market_location_name": "Glasgow Livestock Auction (2)",
+        "market_location_state": "KY",
+        "market_location_city": "Glasgow"
+    },
+    {
+        "slug_id": "2234",
+        "market_location_name": "Eighty Four",
+        "market_location_state": "PA",
+        "market_location_city": "Eighty Four"
+    },
+    {
+        "slug_id": "2248",
+        "market_location_name": "West Point Livestock Auction",
+        "market_location_state": "NE",
+        "market_location_city": "West Point"
+    },
+    {
+        "slug_id": "2383",
+        "market_location_name": "'R' Livestock Connection",
+        "market_location_state": "UT",
+        "market_location_city": "Monroe"
+    },
+    {
+        "slug_id": "3090",
+        "market_location_name": "Brush (2)",
+        "market_location_state": "CO",
+        "market_location_city": "Brush"
+    },
+    {
+        "slug_id": "3365",
+        "market_location_name": "Lonestar Stockyards",
+        "market_location_state": "TX",
+        "market_location_city": "Wildorado"
+    },
+    {
+        "slug_id": "3415",
+        "market_location_name": "Topeka Livestock Auction ",
+        "market_location_state": "IN",
+        "market_location_city": "Topeka"
+    },
+    {
+        "slug_id": "3475",
+        "market_location_name": "Cattlemen\u2019s Livestock Exchange - Cord, AR",
+        "market_location_state": "AR",
+        "market_location_city": "Cord"
+    },
+    {
+        "slug_id": "3484",
+        "market_location_name": "SEMO Livestock Sales",
+        "market_location_state": "MO",
+        "market_location_city": "Jackson"
+    },
+    {
+        "slug_id": "3635",
+        "market_location_name": "Tina Livestock",
+        "market_location_state": "MO",
+        "market_location_city": "Tina"
+    },
+    {
+        "slug_id": "3653",
+        "market_location_name": "North Platte Stockyards",
+        "market_location_state": "NE",
+        "market_location_city": null
+    },
+    {
+        "slug_id": "3654",
+        "market_location_name": "Mid Missouri Stockyards",
+        "market_location_state": "MO",
+        "market_location_city": null
+    },
+    {
+        "slug_id": "3675",
+        "market_location_name": "McMinnville Livestock Auction",
+        "market_location_state": "TN",
+        "market_location_city": "McMinnville"
+    },
+    {
+        "slug_id": "3677",
+        "market_location_name": "United Producers Inc (Fayetteville, TN)",
+        "market_location_state": "TN",
+        "market_location_city": "Fayetteville"
+    }
+]
