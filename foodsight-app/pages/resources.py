@@ -127,7 +127,7 @@ layout = html.Div(
                             "Visit the ",
                             html.A("Project's Notebook", href='https://pcarbomestre.github.io/blog-posts/FoodSight-notebook/foodsight_notebook.html', target="_blank"),
                             " for more details on the resources and the data processing pipeline, or visit the project's ",
-                            html.A("GitHub repository", href='https://github.com/pcarbomestre/foodsight', target="_blank"),
+                            html.A("GitHub repository", href='https://github.com/pcarbomestre/FoodSight-ERI-UCSB', target="_blank"),
                             "."
                         ]),
                     ])
